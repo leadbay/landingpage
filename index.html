@@ -266,11 +266,11 @@
           <div class="col-md-10 mx-auto col-lg-5">
             <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" name="waitinglist" method="POST" data-netlify="true">
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="your@e-mail.com">
+                <input type="email" class="form-control" name="e-mail" id="floatingInput" placeholder="your@e-mail.com">
                 <label for="floatingInput">Email address</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="company" class="form-control" id="floatingCompany" placeholder="Space X">
+                <input type="company" class="form-control" name="company" id="floatingCompany" placeholder="Space X">
                 <label for="floatingCompany">Company</label>
               </div>
               <div class="checkbox mb-3">
@@ -317,7 +317,7 @@
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                 <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" name="newsletter" method="POST" data-netlify="true">
                   <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <input id="newsletter1" type="text" name="e-mail" class="form-control" placeholder="Email address">
                   <button class="btn btn-primary" type="submit">Subscribe</button>
                 </form>
               </div>
