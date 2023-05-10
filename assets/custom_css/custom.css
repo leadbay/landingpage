@@ -9,3 +9,10 @@
   background-color: rgba(0,0,0);
   transition : all ease-in-out 600ms;
 }
+
+.splash-text {
+  height : 90%;
+  display : flex;
+  justify-content: center;
+  align-items : center;
+}
