@@ -1,225 +1,241 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-<head>
-  <script src="assets/js/color-modes.js"></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="assets/scss/custom.css" rel="stylesheet">
-  <link href="node_modules/animate.css/animate.css" rel="stylesheet">
+  <!DOCTYPE html>
+  <html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/scss/custom.css" rel="stylesheet">
+    <link href="node_modules/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/custom_css/custom.css" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 
 
-  <!--favicon-->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 
-  <!--metadata-->
-  <meta name="author" content="Milan Stankovic">
-  <meta name="description" content="Leadbay">
-  <meta name="keywords" content="Leadbay, B2B, Sales Intelligence, Data, Sales Perf">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Leadbay">
-  <meta property="og:description" content=Leadbay">
-  <title>Leadbay - Coming soon</title>
+    <!--metadata-->
+    <meta name="author" content="Milan Stankovic">
+    <meta name="description" content="Leadbay">
+    <meta name="keywords" content="Leadbay, B2B, Sales Intelligence, Data, Sales Perf">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Leadbay">
+    <meta property="og:description" content=Leadbay">
+    <title>Leadbay - Coming soon</title>
 
-</head>
-<body>
+  </head>
+  <body id="body">
+    <!--splash screen-->
 
-  <!--logo and button header-->
-  <a id="start"></a>
-  <div class="sticky-sm-top bg-dark">
-    <div class="container">
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-        <div class="col-md-3 mb-2 mb-md-0">
-          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-            <img height="32" src="assets/brand/leadbay-logo-white-shadow.png"/>
-          </a>
-        </div>
+    <div id="splash" class="splash">
+      <div class ="splash-text">
+          <img class="img-fluid" src="assets/img/splash.gif"/>
       </div>
-
-    </header>
   </div>
 
+  <!--everything else-->
 
-
-  <!--main hero-->
-
-
-    <div class="container col-xxl-10 px-4 py-1">
-      <div class="row flex-lg-row align-items-center g-5 vh-100">
-
-        <div class="col-lg-6 text-center text-lg-start">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Engage with the right lead at the right time</h1>
-          <p class="lead">Lead machine and behavioral targeting solution for B2B sales.</p>
-
-          <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
-            <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2 animate__animated animate__slideInLeft">Join the waiting list</a>
+  <div id="nosplash" class="d-none">
+    <!--logo and button header-->
+      <a id="start"></a>
+      <div class="sticky-sm-top bg-dark">
+        <div class="container">
+          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+            <div class="col-md-3 mb-2 mb-md-0">
+              <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img height="32" src="assets/brand/leadbay-logo-white-shadow.png"/>
+              </a>
+            </div>
           </div>
-        </div>
 
-
-        <div class="col-12 col-sm-12 col-lg-6">
-          <div class="d-grid gap-2 d-flex justify-content-center justify-content-lg-start">
-
-          <img src="assets/img/hero1.gif" class="img-fluid border rounded-top-5 shadow-lg animate__animated animate__fadeIn animate__slow" width="700" height="500" loading="lazy">
-        </div>
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-<a id="features"></a>
-
-  <!--first hero-->
-  <div class="bg-body-tertiary">
-    <div class="container col-xxl-8 px-4 py-5 mb-4">
-      <div class="row flex-lg-row align-items-center g-5 py-5 my-4">
-
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Set up your smart <div class="text-primary">lead machine</div> in 3 clicks</h1>
-          <p class="lead">Define your target personas, connect with your current database, cherry-pick your sample clients, and let Leadbay extrapolate to find lookalikes.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join the waiting list</a>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <img src="assets/img/hero2.png" class="d-block mx-lg-auto img-fluid rounded-start-5 shadow-lg" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <!--second hero-->
-
-  <div class="container col-xxl-8 px-4 py-5 my-4">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 my-4">
-
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><div class="text-primary">Discover</div> highly qualified leads every week</h1>
-        <p class="lead">Select and connect with new leads every week from your ecosystem. Our AI will carefully send you suggestions based on your traffic and likelihood prediction from your lead machine.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join the waiting list</a>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <img src="assets/img/hero4.png" class="d-block mx-lg-auto img-fluid rounded-end-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-      </div>
-    </div>
-  </div>
-
-  <!--third hero-->
-  <div class="bg-body-tertiary">
-
-    <div class="container col-xxl-8 px-4 py-5 my-4">
-      <div class="row flex-lg-row align-items-center g-5 py-5 my-4">
-
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Close the right lead, at the right time with our <div class="text-primary">AI system</div></h1>
-          <p class="lead">Set your scoring criteria and let our AI system collect signals from lead events and behaviors that will help you contact the right lead at the right time.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join the waiting list</a>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <img src="assets/img/hero3.png" class="d-block mx-lg-auto img-fluid rounded-start-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-        </div>
-
+        </header>
       </div>
 
 
-    </div>
-  </div>
 
-    <a id="waitinglist"></a>
-    <!--sign-up-->
+      <!--main hero-->
 
 
+        <div class="container col-xxl-10 px-4 py-1">
+          <div class="row flex-lg-row align-items-center g-5 vh-100">
 
-      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-lg-7 text-center text-lg-start">
-            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Last sales-perf tool you'll ever need</h1>
-            <p class="col-lg-10 fs-4">We are rolling out early-adopter access in batches. Sign-up to get your place in line. We'll be in touch soon.</p>
-          </div>
-          <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" name="waitinglist" method="POST" data-netlify="true">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" name="e-mail" id="floatingInput" placeholder="your@e-mail.com">
-                <label for="floatingInput">Email address</label>
+            <div class="col-lg-6 text-center text-lg-start">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Engage with the right lead at the right time</h1>
+              <p class="lead">Lead machine and behavioral targeting solution for B2B sales.</p>
+
+              <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
+                <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2 animate__animated animate__slideInLeft">Join the waiting list</a>
               </div>
-              <div class="form-floating mb-3">
-                <input type="company" class="form-control" name="company" id="floatingCompany" placeholder="Space X">
-                <label for="floatingCompany">Company</label>
+            </div>
+
+
+            <div class="col-12 col-sm-12 col-lg-6">
+              <div class="d-grid gap-2 d-flex justify-content-center justify-content-lg-start">
+
+              <img src="assets/img/hero1.gif" class="img-fluid border rounded-top-5 shadow-lg animate__animated animate__fadeIn animate__slow" width="700" height="500" loading="lazy">
+            </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+    <a id="features"></a>
+
+      <!--first hero-->
+      <div class="bg-body-tertiary">
+        <div class="container col-xxl-8 px-4 py-5 mb-4">
+          <div class="row flex-lg-row align-items-center g-5 py-5 my-4">
+
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Set up your smart <div class="text-primary">lead machine</div> in 3 clicks</h1>
+              <p class="lead">Define your target personas, connect with your current database, cherry-pick your sample clients, and let Leadbay extrapolate to find lookalikes.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join the waiting list</a>
               </div>
-              <div class="checkbox mb-3">
-                <label>
-                  <input type="checkbox" class="form-check-input" value="privacy" required> I agree to the Privacy Policy.
-                </label>
-                <label>
-                  <input type="checkbox" class="form-check-input" value="privacy" required> I consent to my e-mail being used to contact me.
-                </label>
-              </div>
-              <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-            </form>
+            </div>
+
+            <div class="col-lg-6">
+              <img src="assets/img/hero2.png" class="d-block mx-lg-auto img-fluid rounded-start-5 shadow-lg" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--second hero-->
+
+      <div class="container col-xxl-8 px-4 py-5 my-4">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 my-4">
+
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><div class="text-primary">Discover</div> highly qualified leads every week</h1>
+            <p class="lead">Select and connect with new leads every week from your ecosystem. Our AI will carefully send you suggestions based on your traffic and likelihood prediction from your lead machine.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join the waiting list</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="assets/img/hero4.png" class="d-block mx-lg-auto img-fluid rounded-end-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
           </div>
         </div>
       </div>
 
+      <!--third hero-->
+      <div class="bg-body-tertiary">
 
-    <!--footer-->
-    <div class="bg-body-tertiary">
-    <div class="container">
-      <footer class="py-5">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>About us</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#start" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#features" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#waitinglist" class="nav-link p-0 text-body-secondary">Waiting list</a></li>
-            </ul>
-          </div>
+        <div class="container col-xxl-8 px-4 py-5 my-4">
+          <div class="row flex-lg-row align-items-center g-5 py-5 my-4">
 
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Can't wait?</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="https://ludogranger.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile" class="nav-link p-0 text-body-secondary" target="_blank">Ludo's blog</a></li>
-              <li class="nav-item mb-2"><a href="https://milstan.typeform.com/to/TVsi3Afc?_gl=1*fog3cr*_ga*NzIwNjI5NzE2LjE2ODI0Mzc4OTA.*_ga_N6F0VDRT9W*MTY4MzI4Mjc2Ny4xNi4xLjE2ODMyODI3OTEuMzYuMC4w*_ga_YBVHZJ5VPC*MTY4MzI4Mjc2Ny4xMi4xLjE2ODMyODI3OTEuMzYuMC4w&typeform-source=admin.typeform.com" class="nav-link p-0 text-body-secondary" target="_blank">User Research</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-5 offset-md-3 mb-3">
-            <form name="newsletter" method="POST" data-netlify="true">
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-
-                  <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" name="e-mail" class="form-control" placeholder="Email address">
-                  <button class="btn btn-primary" type="submit">Subscribe</button>
-
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Close the right lead, at the right time with our <div class="text-primary">AI system</div></h1>
+              <p class="lead">Set your scoring criteria and let our AI system collect signals from lead events and behaviors that will help you contact the right lead at the right time.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join the waiting list</a>
               </div>
-              </form>
+            </div>
+
+            <div class="col-lg-6">
+              <img src="assets/img/hero3.png" class="d-block mx-lg-auto img-fluid rounded-start-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+
           </div>
+
+
+        </div>
+      </div>
+
+        <a id="waitinglist"></a>
+        <!--sign-up-->
+
+
+
+          <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+              <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Last sales-perf tool you'll ever need</h1>
+                <p class="col-lg-10 fs-4">We are rolling out early-adopter access in batches. Sign-up to get your place in line. We'll be in touch soon.</p>
+              </div>
+              <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" name="waitinglist" method="POST" data-netlify="true">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" name="e-mail" id="floatingInput" placeholder="your@e-mail.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="company" class="form-control" name="company" id="floatingCompany" placeholder="Space X">
+                    <label for="floatingCompany">Company</label>
+                  </div>
+                  <div class="checkbox mb-3">
+                    <label>
+                      <input type="checkbox" class="form-check-input" value="privacy" required> I agree to the Privacy Policy.
+                    </label>
+                    <label>
+                      <input type="checkbox" class="form-check-input" value="privacy" required> I consent to my e-mail being used to contact me.
+                    </label>
+                  </div>
+                  <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+        <!--footer-->
+        <div class="bg-body-tertiary">
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5>About us</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#start" class="nav-link p-0 text-body-secondary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#features" class="nav-link p-0 text-body-secondary">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#waitinglist" class="nav-link p-0 text-body-secondary">Waiting list</a></li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Can't wait?</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="https://ludogranger.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile" class="nav-link p-0 text-body-secondary" target="_blank">Ludo's blog</a></li>
+                  <li class="nav-item mb-2"><a href="https://milstan.typeform.com/to/TVsi3Afc?_gl=1*fog3cr*_ga*NzIwNjI5NzE2LjE2ODI0Mzc4OTA.*_ga_N6F0VDRT9W*MTY4MzI4Mjc2Ny4xNi4xLjE2ODMyODI3OTEuMzYuMC4w*_ga_YBVHZJ5VPC*MTY4MzI4Mjc2Ny4xMi4xLjE2ODMyODI3OTEuMzYuMC4w&typeform-source=admin.typeform.com" class="nav-link p-0 text-body-secondary" target="_blank">User Research</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-5 offset-md-3 mb-3">
+                <form name="newsletter" method="POST" data-netlify="true">
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" name="e-mail" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="submit">Subscribe</button>
+
+                  </div>
+                  </form>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>&copy; 2023 Leadbay. All rights reserved.</p>
+            </div>
+          </footer>
         </div>
 
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-          <p>&copy; 2023 Leadbay. All rights reserved.</p>
-        </div>
-      </footer>
-    </div>
+      </div>
+
 
   </div>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/custom_js/splash.js"></script>
 
-  </body>
+    </body>
