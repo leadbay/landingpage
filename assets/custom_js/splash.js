@@ -1,7 +1,8 @@
-var splashScreen = document.querySelector('.splash');
+var splashScreen = document.getElementById('splash');
+var everythingElse = document.getElementById('nosplash');
+
+
 splashScreen.addEventListener('click',()=>{
-  splashScreen.style.opacity = 0;
-  setTimeout(()=>{
-    splashScreen.classList.add('d-none')
-  },610)
+  splashScreen.classList.add('d-none');
+  everythingElse.classList.remove('d-none');
 })
