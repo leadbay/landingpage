@@ -72,11 +72,14 @@
               <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
               <button id="join-btn-1" type="button" class="btn btn-primary btn-lg px-4 me-md-2 animate__animated animate__zoomIn">Join the waiting list</button>
 
-              <div id="join-form-1" class="d-flex flex-column flex-sm-row gap-2 d-none">
-                <form name="waitinglist1" method="POST" data-netlify="true">
+              <div id="join-form-1" class="d-none">
+              <form name="waitinglist1" method="POST" data-netlify="true">
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+
                   <label for="waitinglist1" class="visually-hidden">your work e-mail</label>
                   <input id="waitinglist1" type="text" name="e-mail" class="form-control" placeholder="your@work.email">
                   <button class="btn btn-primary" type="submit">Join</button>
+                  </div>
                 </form>
               </div>
 
