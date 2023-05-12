@@ -12,4 +12,4 @@ splashScreen.addEventListener('click',()=>{
 
 setTimeout(() => {
   closeSplash();
-}, 3000);
+}, 3300);
