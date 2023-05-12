@@ -70,7 +70,16 @@
               <p class="lead">Lead machine and behavioral targeting solution for B2B sales.</p>
 
               <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
-                <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2 animate__animated animate__slideInLeft">Join the waiting list</a>
+              <button id="join-btn-1" type="button" class="btn btn-primary btn-lg px-4 me-md-2 animate__animated animate__zoomIn">Join the waiting list</button>
+
+              <div id="join-form-1" class="d-flex flex-column flex-sm-row gap-2 d-none">
+
+                  <label for="waitinglist1" class="visually-hidden">your work e-mail</label>
+                  <input id="waitinglist1" type="text" name="e-mail" class="form-control" placeholder="your@work.email">
+                  <button class="btn btn-primary" type="submit">Join</button>
+
+              </div>
+
               </div>
             </div>
 
@@ -98,9 +107,6 @@
             <div class="col-lg-6">
               <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Set up your smart <div class="text-primary">lead machine</div> in 3 clicks</h1>
               <p class="lead">Define your target personas, connect with your current database, cherry-pick your sample clients, and let Leadbay extrapolate to find lookalikes.</p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join the waiting list</a>
-              </div>
             </div>
 
             <div class="col-lg-6">
@@ -118,9 +124,6 @@
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><div class="text-primary">Discover</div> highly qualified leads every week</h1>
             <p class="lead">Select and connect with new leads every week from your ecosystem. Our AI will carefully send you suggestions based on your traffic and likelihood prediction from your lead machine.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join the waiting list</a>
-            </div>
           </div>
           <div class="col-lg-6">
             <img src="assets/img/hero4.png" class="d-block mx-lg-auto img-fluid rounded-end-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -137,9 +140,6 @@
             <div class="col-lg-6">
               <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Close the right lead, at the right time with our <div class="text-primary">AI system</div></h1>
               <p class="lead">Set your scoring criteria and let our AI system collect signals from lead events and behaviors that will help you contact the right lead at the right time.</p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a href="#waitinglist" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Join the waiting list</a>
-              </div>
             </div>
 
             <div class="col-lg-6">
@@ -173,14 +173,7 @@
                     <input type="company" class="form-control" name="company" id="floatingCompany" placeholder="Space X">
                     <label for="floatingCompany">Company</label>
                   </div>
-                  <div class="checkbox mb-3">
-                    <label>
-                      <input type="checkbox" class="form-check-input" value="privacy" required> I agree to the Privacy Policy.
-                    </label>
-                    <label>
-                      <input type="checkbox" class="form-check-input" value="privacy" required> I consent to my e-mail being used to contact me.
-                    </label>
-                  </div>
+                  
                   <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
                 </form>
               </div>
