@@ -11853,15 +11853,17 @@ textarea.form-control-lg {
 .fluomarker-primary {
   background-color: #984aff;
   color: #ffffff;
-  padding: 0 0.2em;
+  padding: 1px;
   backdrop-filter: blur(5px);
+  display: inline-block;
 }
 
 .fluomarker-secondary {
   background-color: #49e8d5;
   color: #ffffff;
-  padding: 0 0.2em;
+  padding: 1px;
   backdrop-filter: blur(5px);
+  display: inline-block;
 }
 
 /*# sourceMappingURL=custom.css.map */
