@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-  <html lang="en" data-bs-theme="dark">
+  <html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,33 +44,31 @@
   <div id="nosplash" class="d-none">
     <!--logo and button header-->
       <a id="start"></a>
-      <div class="sticky-sm-top bg-dark">
-        <div class="container">
-          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-            <div class="col-md-3 mb-2 mb-md-0">
-              <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                <img height="32" src="assets/brand/leadbay-logo-white-shadow.png"/>
-              </a>
-            </div>
-          </div>
+      <nav class="navbar sticky-top bg-body px-4">
 
-        </header>
-      </div>
+        <div class="container-fluid px-4 py-2">
+          <a class="navbar-brand" href="#">
+            <img height="32" src="assets/brand/leadbay-logo-black.png"/>
+          </a>
+        </div>
+
+      </nav>
+
 
 
 
       <!--main hero-->
 
 
-        <div class="container col-xxl-10 px-4 py-1">
+        <div class="container-fluid col-xxl-10 px-4 py-1">
           <div class="row flex-lg-row align-items-center g-5 vh-100">
 
-            <div class="col-lg-6 text-center text-lg-start">
+            <div class="col-lg-5 px-5 text-center text-lg-start">
               <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Engage with the right lead at the right time</h1>
-              <p class="lead">Lead machine and behavioral targeting solution for B2B sales.</p>
+              <p class="lead"><mark class="fluomarker-secondary">Lead machine</mark> and behavioral targeting solution for B2B sales.</p>
 
               <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-start">
-              <button id="join-btn-1" type="button" class="btn btn-primary btn-lg px-4 me-md-2 animate__animated animate__zoomIn">Join the waiting list</button>
+              <button id="join-btn-1" type="button" class="btn btn-primary text-light btn-lg px-4 me-md-2">Join the waiting list</button>
 
               <div id="join-form-1" class="d-none">
               <form name="waitinglist1" method="POST" data-netlify="true">
@@ -78,7 +76,7 @@
 
                   <label for="waitinglist1" class="visually-hidden">your work e-mail</label>
                   <input id="waitinglist1" type="text" name="e-mail" class="form-control" placeholder="your@work.email">
-                  <button class="btn btn-primary" type="submit">Join</button>
+                  <button class="btn btn-primary text-light" type="submit">Join</button>
                   </div>
                 </form>
               </div>
@@ -87,7 +85,7 @@
             </div>
 
 
-            <div class="col-12 col-sm-12 col-lg-6">
+            <div class="col-12 col-sm-12 col-lg-7">
               <div class="d-grid gap-2 d-flex justify-content-center justify-content-lg-start">
 
               <!-- <img src="assets/img/hero1.gif" class="img-fluid border rounded-top-5 shadow-lg animate__animated animate__fadeIn animate__slow" width="700" height="500" loading="lazy"> -->
@@ -105,16 +103,16 @@
 
       <!--first hero-->
       <div class="bg-body-tertiary">
-        <div class="container col-xxl-8 px-4 py-5 mb-4">
-          <div class="row flex-lg-row align-items-center g-5 py-5 my-4">
+        <div class="container-fluid col-xxl-8 px-4 py-5 mb-4">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5 my-4">
 
-            <div class="col-lg-6">
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Set up your smart <div class="text-primary">lead machine</div> in 3 clicks</h1>
+            <div class="col-lg-5 px-5">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Set up your smart <mark class="fluomarker-primary">lead machine</mark> in 3 clicks</h1>
               <p class="lead">Define your target personas, connect with your current database, cherry-pick your sample clients, and let Leadbay extrapolate to find lookalikes.</p>
             </div>
 
-            <div class="col-lg-6">
-              <img src="assets/img/hero2.png" class="d-block mx-lg-auto img-fluid shadow-lg" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <div class="col-lg-7">
+              <img src="assets/img/hero2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
 
           </div>
@@ -122,14 +120,14 @@
       </div>
       <!--second hero-->
 
-      <div class="container col-xxl-8 px-4 py-5 my-4">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 my-4">
+      <div class="container-fluid col-xxl-8 px-4 py-5 my-4">
+        <div class="row flex-lg-row align-items-center g-5 py-5 my-4">
 
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><div class="text-primary">Discover</div> highly qualified leads every week</h1>
+          <div class="col-lg-5 px-5">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><mark class="fluomarker-primary">Discover</mark> highly qualified leads every week</h1>
             <p class="lead">Select and connect with new leads every week from your ecosystem. Our AI will carefully send you suggestions based on your traffic and likelihood prediction from your lead machine.</p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-7">
             <img src="assets/img/hero3.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
           </div>
         </div>
@@ -138,15 +136,15 @@
       <!--third hero-->
       <div class="bg-body-tertiary">
 
-        <div class="container col-xxl-8 px-4 py-5 my-4">
-          <div class="row flex-lg-row align-items-center g-5 py-5 my-4">
+        <div class="container-fluid col-xxl-8 px-4 py-5 my-4">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5 my-4">
 
-            <div class="col-lg-6">
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Close the right lead, at the right time with our <div class="text-primary">AI system</div></h1>
+            <div class="col-lg-5 px-5">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Close the right lead, at the right time with our <mark class="fluomarker-primary">AI system</mark></h1>
               <p class="lead">Set your scoring criteria and let our AI system collect signals from lead events and behaviors that will help you contact the right lead at the right time.</p>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-7">
               <img src="assets/img/hero4.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
 
@@ -161,9 +159,9 @@
 
 
 
-          <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="container-fluid col-xl-10 col-xxl-8 px-4 py-5">
             <div class="row align-items-center g-lg-5 py-5">
-              <div class="col-lg-7 text-center text-lg-start">
+              <div class="col-lg-7 px-5 text-center text-lg-start">
                 <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Last sales-perf tool you'll ever need</h1>
                 <p class="col-lg-10 fs-4">We are rolling out early-adopter access in batches. Sign-up to get your place in line. We'll be in touch soon.</p>
               </div>

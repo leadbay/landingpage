@@ -3,9 +3,23 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-$primary: #d1afd1;
-$secondary: #f8d289;
+$primary: #984aff;
+$secondary: #49e8d5;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+
+.fluomarker-primary {
+  background-color: $primary;
+  color: #ffffff;
+  padding: 0 0.2em;
+  backdrop-filter: blur(5px);
+}
+
+.fluomarker-secondary {
+  background-color: $secondary;
+  color: #ffffff;
+  padding: 0 0.2em;
+  backdrop-filter: blur(5px);
+}
