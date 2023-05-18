@@ -15,7 +15,7 @@ splashScreen.addEventListener('click',()=>{
 
 setTimeout(() => {
   closeSplash();
-}, 3300);
+}, 2480);
 
 joinBtn1.addEventListener('click', ()=>{
   joinBtn1.classList.add('d-none');
