@@ -20,3 +20,7 @@
 .noscroll {
   overflow-y: hidden;
 }
+
+.logo{
+  filter: grayscale(100%);
+}
