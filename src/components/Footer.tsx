@@ -65,7 +65,12 @@ export default function Footer() {
 						<p className="mt-2 leading-6 text-violet-200/70">
 							Monthly digest of what's new and exciting from us.
 						</p>
-						<form className="mt-6 sm:flex sm:max-w-md">
+						<form
+							className="mt-6 sm:flex sm:max-w-md"
+							name="newsletter"
+							method="POST"
+							data-netlify="true"
+						>
 							<label htmlFor="email-address" className="sr-only">
 								Email address
 							</label>

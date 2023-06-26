@@ -14,7 +14,12 @@ export default function EarlyAccess() {
 				<p className="mx-auto mt-6 max-w-xl text-center text-lg leading-8 text-neutral-600">
 					Empower B2B sales with ai-powered qualified leads.
 				</p>
-				<form className="mx-auto mt-10 flex max-w-md gap-x-4">
+				<form
+					className="mx-auto mt-10 flex max-w-md gap-x-4"
+					name="waitinglist"
+					method="POST"
+					data-netlify="true"
+				>
 					<label htmlFor="email-address" className="sr-only">
 						Email address
 					</label>
