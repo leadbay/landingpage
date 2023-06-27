@@ -7,11 +7,7 @@ export default function Clients() {
 				className="
       max-w-3xl text-center text-2xl font-bold tracking-tight text-violet-900 sm:text-3xl"
 			>
-				Built with sales in{' '}
-				<span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-violet-500 bg-clip-text text-transparent">
-					200+
-				</span>{' '}
-				mid-market B2B companies
+				Built with sales in 200+ mid-market B2B companies
 			</p>
 			<div className="mx-auto mt-10 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-12 grayscale sm:max-w-xl sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-7">
 				<img
