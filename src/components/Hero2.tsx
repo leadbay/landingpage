@@ -1,4 +1,4 @@
-import Container from './Container'
+import { Container } from '@/components'
 
 export default function Hero2() {
 	return (
