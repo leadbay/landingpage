@@ -12,10 +12,15 @@ export default function Hero() {
 						</span>
 					</h1>
 					<p className="mt-6 text-lg leading-8 text-neutral-600">
-						Lead machine and behavioral targeting solution for B2B sales.
+						Lead supply and behavioral targeting for B2B sales.
 					</p>
 					<div className="mt-10 flex items-center gap-x-6">
-						<form className="sm:flex sm:max-w-md">
+						<form
+							className="sm:flex sm:max-w-md"
+							name="waitinglist"
+							method="POST"
+							data-netlify="true"
+						>
 							<label htmlFor="email-address" className="sr-only">
 								Email address
 							</label>

@@ -2,9 +2,9 @@ import Container from './Container'
 
 export default function Clients() {
 	return (
-		<Container className="flex flex-col items-center space-y-20 py-20">
+		<Container className="flex flex-col items-center space-y-20 pb-20">
 			<p
-				className="my-10
+				className="
       max-w-3xl text-center text-2xl font-bold tracking-tight text-violet-900 sm:text-3xl"
 			>
 				Built with sales in{' '}
