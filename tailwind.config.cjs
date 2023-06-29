@@ -44,6 +44,25 @@ module.exports = {
 					100: '#F3F2F5',
 					50: '#F9F8FA'
 				}
+			},
+			animation: {
+				blob: 'blob 12s infinite'
+			},
+			keyframes: {
+				blob: {
+					'25%': {
+						transform: 'translate(0px, 0px) scale(1)'
+					},
+					'50%': {
+						transform: 'translate(30px, -50px) scale(1.1)'
+					},
+					'75%': {
+						transform: 'translate(-20px, 20px) scale(0.5)'
+					},
+					'100%': {
+						transform: 'tranlate(-10px, 30px) scale(1)'
+					}
+				}
 			}
 		}
 	},

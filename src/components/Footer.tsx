@@ -1,4 +1,5 @@
 import { Container } from '@/components'
+import { PaperAirplaneIcon } from '@heroicons/react/20/solid'
 
 const navigation = {
 	aboutus: [
@@ -44,7 +45,7 @@ export default function Footer() {
 								</ul>
 							</div>
 						</div>
-						<div className="xl:mt-0">
+						<div className="w-full sm:w-1/2">
 							<h3 className="font-semibold leading-6 text-violet-50">
 								Subscribe to our newsletter
 							</h3>
@@ -66,22 +67,23 @@ export default function Footer() {
 									id="email-address"
 									autoComplete="email"
 									required
-									className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-6 py-4 text-base text-white  ring-2 ring-inset ring-white/10 placeholder:text-violet-200 focus:ring-2 focus:ring-inset focus:ring-violet-500 sm:w-64 sm:sm:leading-6 xl:w-full"
+									className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-6 py-4 text-base text-white ring-2 ring-inset  ring-white/10 duration-200 placeholder:text-violet-200 hover:bg-white/10 focus:ring-2 focus:ring-inset focus:ring-violet-500 sm:w-64 sm:sm:leading-6 xl:w-full"
 									placeholder="Email address"
 								/>
 								<div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
 									<button
 										type="submit"
-										className="flex w-full items-center justify-center rounded-md bg-violet-200 px-6 py-4 font-semibold text-violet-900  hover:bg-violet-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500"
+										className=" flex w-full transform items-center justify-center space-x-2 rounded-md bg-violet-200 px-6 py-4 font-semibold text-violet-900 transition duration-200 hover:translate-x-1 hover:bg-white focus-visible:outline  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500 motion-reduce:transition-none motion-reduce:hover:transform-none"
 									>
 										Subscribe
+										<PaperAirplaneIcon className="ml-2 h-6 w-6 text-violet-900" />
 									</button>
 								</div>
 							</form>
 						</div>
 					</div>
-					<div className="border-t border-purple-200/20 p-8 md:flex md:items-center md:justify-between">
-						<p className="text-sm leading-5 text-white/30 md:order-1 md:mt-0">
+					<div className="border-t border-violet-200/10 p-8 md:flex md:items-center md:justify-between">
+						<p className="text-sm leading-5 text-violet-50/30 md:order-1 md:mt-0">
 							&copy; 2023 Leadbay. All rights reserved.
 						</p>
 					</div>
