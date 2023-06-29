@@ -43,7 +43,10 @@ export default function Testimonials() {
 					className="my-10
       max-w-md text-center text-2xl font-bold tracking-tight text-violet-900 sm:text-3xl"
 				>
-					Sales already love us
+					Sales already{' '}
+					<span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-violet-500 bg-clip-text text-transparent">
+						love us
+					</span>
 				</p>
 			</div>
 			<div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
