@@ -3,7 +3,7 @@ import { Container, RequestAccess } from '@/components'
 export default function Hero() {
 	return (
 		<Container>
-			<div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
+			<div className="mx-auto max-w-7xl gap-x-16 px-6 py-16 sm:py-24 lg:flex lg:items-center lg:px-8 lg:py-40">
 				<div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
 					<h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-violet-900 sm:text-6xl">
 						Engage with the right lead at the{' '}
@@ -29,6 +29,9 @@ export default function Hero() {
 								'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
 						}}
 					/>
+				</div>
+				<div className="w-full">
+					<img width="680" height="460" src="hero.png" alt="" />
 				</div>
 			</div>
 		</Container>
