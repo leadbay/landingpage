@@ -13,17 +13,17 @@ export default function Header() {
 					</li>
 					<li>
 						<a className="hover:text-violet-500" href="#waitinglist">
-							Waiting list
+							Request access
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a
 							className="rounded-full border-2 border-violet-800 px-5 py-3 hover:border-violet-600 hover:text-violet-600"
 							href="mailto:contact@leadbay.ai"
 						>
 							Contact
 						</a>
-					</li>
+					</li> */}
 				</ul>
 			</header>
 		</Container>
