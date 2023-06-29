@@ -23,9 +23,6 @@ export default function Splash() {
 						<RequestAccess />
 					</div>
 				</div>
-				{/* <div className="flex justify-center">
-					<img width="680" height="460" src="mockup.png" alt="" />
-				</div> */}
 				<div
 					className="sm:-top-800 -top-400 absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl"
 					aria-hidden="true"
