@@ -20,7 +20,7 @@ const navigation = {
 
 export default function Footer() {
 	return (
-		<footer className="bg-violet-950" aria-labelledby="footer-heading">
+		<footer aria-labelledby="footer-heading">
 			<Container>
 				<h2 id="footer-heading" className="sr-only">
 					Footer
@@ -28,21 +28,6 @@ export default function Footer() {
 				<div className="flex flex-col ">
 					<div className="flex flex-col gap-12 px-8 py-16 sm:flex-row">
 						<div className="flex sm:w-1/2 sm:gap-16">
-							<div className="w-1/2 sm:w-auto">
-								<h3 className="font-semibold leading-6 text-violet-50">About us</h3>
-								<ul role="list" className="mt-6 space-y-4">
-									{navigation.aboutus.map((item) => (
-										<li key={item.name}>
-											<a
-												href={item.href}
-												className="leading-6 text-violet-200/70 hover:text-violet-200"
-											>
-												{item.name}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
 							<div className="w-1/2 sm:w-auto">
 								<h3 className="font-semibold leading-6 text-violet-50">Can't wait?</h3>
 								<ul role="list" className="mt-6 space-y-4">

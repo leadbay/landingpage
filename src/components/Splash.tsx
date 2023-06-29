@@ -1,17 +1,17 @@
 import { Container, RequestAccess } from '@/components'
 
-export default function Hero() {
+export default function Splash() {
 	return (
 		<Container>
 			<div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
 				<div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-					<h1 className="text-white-900 mt-10 max-w-xl text-4xl font-bold tracking-tight sm:text-6xl">
+					<h1 className="mt-10 max-w-xl text-4xl font-bold tracking-tight text-white sm:text-6xl">
 						Engage with the right lead at the{' '}
 						<span className="bg-gradient-to-r from-yellow-500 via-pink-500 to-violet-500 bg-clip-text text-transparent">
 							right time
 						</span>
 					</h1>
-					<p className="mt-6 text-lg leading-8 text-neutral-600">
+					<p className="mt-6 text-lg leading-8 text-violet-400">
 						Lead supply and behavioral targeting for B2B sales.
 					</p>
 					<div className="mt-8 flex items-center gap-x-6">

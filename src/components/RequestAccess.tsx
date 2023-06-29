@@ -10,13 +10,13 @@ export default function RequestAccess() {
 				id="email-address"
 				autoComplete="email"
 				required
-				className="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-6 py-4 text-base text-neutral-900 ring-2 ring-inset ring-neutral-200 placeholder:text-neutral-500 focus:ring-2 focus:ring-inset focus:ring-violet-200 sm:w-64  sm:leading-6 xl:w-full"
+				className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-6 py-4 text-base text-white  ring-2 ring-inset ring-white/10 placeholder:text-violet-200 focus:ring-2 focus:ring-inset focus:ring-violet-500 sm:w-64 sm:sm:leading-6 xl:w-full"
 				placeholder="Enter your email"
 			/>
 			<div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
 				<button
 					type="submit"
-					className="group flex items-center gap-3 rounded-md bg-violet-800 px-6 py-4 font-semibold text-white  transition duration-150 hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600"
+					className="flex w-full items-center justify-center rounded-md bg-violet-200 px-6 py-4 font-semibold text-violet-900  hover:bg-violet-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500"
 				>
 					Request access{' '}
 					<svg
@@ -24,7 +24,7 @@ export default function RequestAccess() {
 						height="20"
 						viewBox="0 0 20 20"
 						xmlns="http://www.w3.org/2000/svg"
-						className="fill-white"
+						className="fill-violet-900"
 					>
 						<path
 							fillRule="evenodd"

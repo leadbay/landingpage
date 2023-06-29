@@ -8,4 +8,5 @@ export { default as Hero2 } from "./Hero2";
 export { default as Hero3 } from "./Hero3";
 export { default as Hero4 } from "./Hero4";
 export { default as RequestAccess } from "./RequestAccess";
+export { default as Splash } from "./Splash";
 export { default as Testimonials } from "./Testimonials";
