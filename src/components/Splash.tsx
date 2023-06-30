@@ -1,11 +1,6 @@
-import { preLoaderAnim } from '@/animations'
 import { Container, RequestAccess } from '@/components'
-import { useEffect } from 'react'
 
 export default function Splash() {
-	useEffect(() => {
-		preLoaderAnim()
-	}, [])
 	return (
 		<Container>
 			<div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-6 py-16 sm:py-24 lg:gap-x-10 lg:px-8 lg:py-40">
