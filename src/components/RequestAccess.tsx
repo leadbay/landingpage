@@ -1,4 +1,5 @@
 import { ArrowSmallRightIcon } from '@heroicons/react/20/solid'
+import { useState } from 'react'
 
 export default function RequestAccess() {
 	return (

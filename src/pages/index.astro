@@ -9,8 +9,8 @@ const content = {
 }
 ---
 
-<Layout title={content.title}>
+<Layout title={content.title} description={content.description}>
 	<main class="grow">
-		<Splash />
+		<Splash client:load />
 	</main>
 </Layout>
