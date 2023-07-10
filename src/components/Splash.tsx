@@ -3,7 +3,7 @@ import { Container, RequestAccess } from '@/components'
 export default function Splash() {
 	return (
 		<Container>
-			<div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-6 py-16 sm:py-24 lg:gap-x-10 lg:px-8 lg:py-40">
+			<div className="flex max-w-7xl flex-col items-center justify-center sm:mx-auto">
 				<div className="mx-auto max-w-2xl  text-center lg:mx-0 lg:flex-auto">
 					<h1 className=" heading mt-10  max-w-2xl text-4xl  font-bold leading-10 text-white sm:text-6xl">
 						Engage with the right lead at the{' '}
