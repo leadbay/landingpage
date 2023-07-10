@@ -37,6 +37,8 @@ export default function Footer() {
 											<a
 												href={item.href}
 												className="leading-6 text-violet-200/70 hover:text-violet-200"
+												target="_blank"
+												rel="noreferrer"
 											>
 												{item.name}
 											</a>
