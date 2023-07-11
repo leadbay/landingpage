@@ -1,9 +1,6 @@
 import { ArrowSmallRightIcon } from '@heroicons/react/20/solid'
-import clsx from 'clsx'
-import { useState } from 'react'
 
 export default function RequestAccess() {
-	const [isOpen, setIsOpen] = useState(false)
 	return (
 		<form className="sm:flex" name="waitinglist" method="POST" data-netlify="true">
 			<label htmlFor="email-address" className="sr-only">
@@ -19,26 +16,13 @@ export default function RequestAccess() {
 				placeholder="Enter your email"
 			/>
 			<div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-				{isOpen ? (
-					<button
-						type="submit"
-						className="flex w-full transform items-center justify-center space-x-2 rounded-md bg-violet-200 px-6 py-4 font-semibold text-violet-900 transition duration-200 hover:translate-x-1 hover:bg-white focus-visible:outline  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500 motion-reduce:transition-none motion-reduce:hover:transform-none"
-					>
-						<span>Request access</span>
-						<ArrowSmallRightIcon className="h-6 w-6" />
-					</button>
-				) : (
-					<button
-						className="flex w-full transform items-center justify-center space-x-2 rounded-md bg-violet-200 px-6 py-4 font-semibold text-violet-900 transition duration-200 hover:translate-x-1 hover:bg-white focus-visible:outline  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500 motion-reduce:transition-none motion-reduce:hover:transform-none"
-						onClick={(e) => {
-							e.preventDefault()
-							setIsOpen(true)
-						}}
-					>
-						<span>Request access</span>
-						<ArrowSmallRightIcon className="h-6 w-6" />
-					</button>
-				)}
+				<button
+					type="submit"
+					className="flex w-full transform items-center justify-center space-x-2 rounded-md bg-violet-200 px-6 py-4 font-semibold text-violet-900 transition duration-200 hover:translate-x-1 hover:bg-white focus-visible:outline  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500 motion-reduce:transition-none motion-reduce:hover:transform-none"
+				>
+					<span>Request access</span>
+					<ArrowSmallRightIcon className="h-6 w-6" />
+				</button>
 			</div>
 		</form>
 	)
