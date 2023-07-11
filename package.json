@@ -1,26 +1,33 @@
 {
-  "name": "landingpage",
-  "version": "1.0.0",
-  "description": "landigpage for leadbay",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leadbay/landingpage.git"
-  },
-  "author": "milstan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/leadbay/landingpage/issues"
-  },
-  "homepage": "https://github.com/leadbay/landingpage#readme",
-  "dependencies": {
-    "animate.css": "^4.1.1",
-    "bootstrap": "^5.3.0-alpha3"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.3.2"
-  }
+	"name": "landing-astro",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/react": "^2.2.1",
+		"@astrojs/tailwind": "^4.0.0",
+		"@fontsource/carter-one": "^5.0.3",
+		"@heroicons/react": "^2.0.18",
+		"@types/react": "^18.0.21",
+		"@types/react-dom": "^18.0.6",
+		"astro": "^2.6.6",
+		"astro-seo": "^0.7.4",
+		"clsx": "^1.2.1",
+		"framer-motion": "^10.12.17",
+		"gsap": "^3.12.2",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"tailwindcss": "^3.0.24"
+	},
+	"devDependencies": {
+		"prettier": "^2.8.8",
+		"prettier-plugin-astro": "^0.10.0",
+		"prettier-plugin-tailwindcss": "^0.3.0"
+	}
 }
