@@ -12,7 +12,7 @@ export default function RequestAccess() {
 			<input
 				type="email"
 				name="email-address"
-				id="email-address"
+				id="access-email-address"
 				autoComplete="email"
 				className={clsx(
 					!isOpen && 'hidden',

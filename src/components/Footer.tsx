@@ -66,7 +66,7 @@ export default function Footer() {
 								<input
 									type="email"
 									name="email-address"
-									id="email-address"
+									id="newsletter-email-address"
 									autoComplete="email"
 									required
 									className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-6 py-4 text-base text-white ring-2 ring-inset  ring-white/10 duration-200 placeholder:text-violet-200 hover:bg-white/10 focus:ring-2 focus:ring-inset focus:ring-violet-500 sm:w-64 sm:sm:leading-6 xl:w-full"
