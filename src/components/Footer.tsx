@@ -85,7 +85,7 @@ export default function Footer() {
 						</div>
 					</div>
 					<div className="border-t border-violet-200/10 p-8 md:flex md:items-center md:justify-between">
-						<p className="text-sm leading-5 text-violet-50/30 md:order-1 md:mt-0">
+						<p className="text-sm leading-5 text-violet-50/50 md:order-1 md:mt-0">
 							&copy; 2023 Leadbay. All rights reserved.
 						</p>
 					</div>
