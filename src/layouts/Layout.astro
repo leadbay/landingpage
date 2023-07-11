@@ -15,22 +15,22 @@ const { title, description } = Astro.props
 <html lang="en" class="min-h-screen scroll-smooth">
 	<head>
 		<SEO
+			canonical="https://leadbay.ai"
 			title={title}
 			description={description}
 			openGraph={{
 				basic: {
 					title: title,
 					type: 'website',
-					image: 'https://github.com/leadbay/landingpage/assets/513170/68151f87-76aa-423c-a391-e9eee43731aa'
+					image: 'https://github.com/leadbay/landingpage/assets/513170/68151f87-76aa-423c-a391-e9eee43731aa',
+					url: 'https://leadbay.ai'
 				}
 			}}
 			twitter={{
 				creator: '@leadbayapp'
 			}}
 			extend={{
-				// extending the default link tags
 				link: [{ rel: 'icon', href: '/favicon.svg' }],
-				// extending the default meta tags
 				meta: [
 					{
 						name: 'twitter:image',
@@ -43,11 +43,8 @@ const { title, description } = Astro.props
 			}}
 		/>
 		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
@@ -55,13 +52,6 @@ const { title, description } = Astro.props
 		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
-
-		<!--metadata-->
-		<meta name="author" content="Leadbay" />
-		<meta name="keywords" content="Leadbay, B2B, Sales Intelligence, Data, Sales Perf" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={description} />
 	</head>
 	<body
 		class="flex min-h-screen flex-col bg-violet-900 text-white selection:bg-violet-200 selection:text-violet-900"
