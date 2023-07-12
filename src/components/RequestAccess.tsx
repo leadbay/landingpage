@@ -4,18 +4,18 @@ export default function RequestAccess() {
 	return (
 		<form
 			className="mt-6 sm:flex sm:max-w-md"
-			name="waitinglist"
+			name="waitlist"
 			action="/"
 			method="POST"
 			data-netlify="true"
 		>
-			<label htmlFor="waiting-email-address" className="sr-only">
+			<label htmlFor="waitlist" className="sr-only">
 				Email address
 			</label>
 			<input
 				type="email"
-				name="waitinglist"
-				id="waiting-email-address"
+				name="waitlist"
+				id="waitlist"
 				autoComplete="email"
 				required
 				className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-6 py-4 text-base text-white ring-2 ring-inset  ring-white/10 duration-200 placeholder:text-violet-200 hover:bg-white/10 focus:ring-2 focus:ring-inset focus:ring-violet-500 sm:w-64 sm:sm:leading-6 xl:w-full"
