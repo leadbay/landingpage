@@ -6,13 +6,14 @@ export default function RequestAccess() {
 	const [isOpen, setIsOpen] = useState(false)
 	return (
 		<form className="sm:flex" name="waitinglist" method="POST" data-netlify="true">
+			<input type="hidden" name="form-name" value="waitinglist" />
 			<label htmlFor="email-address" className="sr-only">
 				Email address
 			</label>
 			<input
 				type="email"
 				name="email-address"
-				id="access-email-address"
+				id="waitinglist-email-address"
 				autoComplete="email"
 				required
 				className={clsx(
