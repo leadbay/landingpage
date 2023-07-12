@@ -2,7 +2,13 @@ import { ArrowSmallRightIcon } from '@heroicons/react/20/solid'
 
 export default function RequestAccess() {
 	return (
-		<form className="mt-6 sm:flex sm:max-w-md" name="waitinglist" method="POST" data-netlify="true">
+		<form
+			className="mt-6 sm:flex sm:max-w-md"
+			name="waitinglist"
+			action="/"
+			method="POST"
+			data-netlify="true"
+		>
 			<label htmlFor="waiting-email-address" className="sr-only">
 				Email address
 			</label>

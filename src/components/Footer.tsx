@@ -57,6 +57,7 @@ export default function Footer() {
 							<form
 								className="mt-6 sm:flex sm:max-w-md"
 								name="newsletter"
+								action="/"
 								method="POST"
 								data-netlify="true"
 							>
