@@ -60,12 +60,12 @@ export default function Footer() {
 								method="POST"
 								data-netlify="true"
 							>
-								<label htmlFor="email-address" className="sr-only">
+								<label htmlFor="newsletter-email-address" className="sr-only">
 									Email address
 								</label>
 								<input
 									type="email"
-									name="email-address"
+									name="newsletter"
 									id="newsletter-email-address"
 									autoComplete="email"
 									required

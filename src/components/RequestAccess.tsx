@@ -2,13 +2,13 @@ import { ArrowSmallRightIcon } from '@heroicons/react/20/solid'
 
 export default function RequestAccess() {
 	return (
-		<form className="mt-6 sm:flex sm:max-w-md" name="waiting" method="POST" data-netlify="true">
-			<label htmlFor="email-address" className="sr-only">
+		<form className="mt-6 sm:flex sm:max-w-md" name="waitinglist" method="POST" data-netlify="true">
+			<label htmlFor="waiting-email-address" className="sr-only">
 				Email address
 			</label>
 			<input
 				type="email"
-				name="email-address"
+				name="waitinglist"
 				id="waiting-email-address"
 				autoComplete="email"
 				required
