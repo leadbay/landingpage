@@ -60,6 +60,7 @@ export default function Footer() {
 								method="POST"
 								data-netlify="true"
 							>
+								<input type="hidden" name="form-name" value="newsletter" />
 								<label htmlFor="email-address" className="sr-only">
 									Email address
 								</label>
