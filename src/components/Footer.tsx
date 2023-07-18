@@ -11,10 +11,6 @@ const navigation = {
 		{
 			name: "Ludo's blog",
 			href: 'https://ludogranger.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile'
-		},
-		{
-			name: 'User research',
-			href: 'https://milstan.typeform.com/to/TVsi3Afc?_gl=1*fog3cr*_ga*NzIwNjI5NzE2LjE2ODI0Mzc4OTA.*_ga_N6F0VDRT9W*MTY4MzI4Mjc2Ny4xNi4xLjE2ODMyODI3OTEuMzYuMC4w*_ga_YBVHZJ5VPC*MTY4MzI4Mjc2Ny4xMi4xLjE2ODMyODI3OTEuMzYuMC4w&typeform-source=admin.typeform.com'
 		}
 	]
 }
