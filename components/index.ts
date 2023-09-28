@@ -1,0 +1,7 @@
+export { default as BurgerIcon } from "./burger-icon"
+export { default as Container } from "./container"
+export { default as Footer } from "./footer"
+export { default as Header } from "./header"
+export { default as Hero } from "./hero"
+export { default as LinkedinIcon } from "./linkedin-icon"
+export { default as Logo } from "./logo"
