@@ -4,8 +4,14 @@ import { basement, reenie } from "@/fonts"
 import { cn } from "@/lib/utils"
 import { Container } from "@/components"
 import { motion } from "framer-motion"
+import { useState } from "react"
 
 const Hero = () => {
+  const [displayRequestForm, setdisplayRequestForm] = useState(false)
+
+  const handleRequestClick = () => {
+    setdisplayRequestForm(true)
+  }
   return (
     <Container className='flex flex-col items-center text-center gap-2 justify-center shrink-0 grow'>
       <motion.div
@@ -37,12 +43,32 @@ const Hero = () => {
             sales!
           </motion.span>
         </h1>
-        <h2 className='leading-loose'>
+        <h2 className='leading-loose mb-6'>
           AI-lead supply and behavioral targeting for B2B sales.
         </h2>
-        <button className='py-3 px-8 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'>
-          Request Access
-        </button>
+        {displayRequestForm ? (
+          <form className='flex gap-2 justify-center'>
+            <input
+              type='email'
+              required
+              placeholder='Enter your email...'
+              className='py-3 px-4 border-2 border-gray-300 rounded-md focus:outline-black'
+            />
+            <button
+              type='submit'
+              className='py-3 px-8 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
+            >
+              Submit
+            </button>
+          </form>
+        ) : (
+          <button
+            onClick={handleRequestClick}
+            className='py-3 px-8 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
+          >
+            Request Access
+          </button>
+        )}
       </motion.div>
     </Container>
   )
