@@ -39,13 +39,13 @@ const Navigation = () => {
         <div className='gap-4 xl:gap-10 xl:flex hidden'>
           <a
             href='https://leadbay.app/login'
-            className='hover:text-gray-700 py-2 px-6 bg-white border-2 border-black hover:border-gray-700 rounded-md'
+            className='hover:text-gray-700 py-0.5 px-4 bg-white border-2 border-black hover:border-gray-700 rounded-md'
           >
             Login
           </a>
           <a
             href='https://leadbay.app/register'
-            className='py-2 px-6 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
+            className='py-0.5 px-4 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
           >
             Sign up
           </a>
