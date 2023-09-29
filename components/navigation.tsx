@@ -43,12 +43,6 @@ const Navigation = () => {
           >
             Login
           </a>
-          <a
-            href='https://leadbay.app/register'
-            className='py-0.5 px-4 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
-          >
-            Sign up
-          </a>
         </div>
         <button className='z-20' onClick={handleMenuClick}>
           <BurgerIcon className='xl:hidden block' />
