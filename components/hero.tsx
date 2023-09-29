@@ -6,22 +6,27 @@ import { Container } from "@/components"
 import { motion } from "framer-motion"
 import { useState } from "react"
 
-const Hero = () => {
+const Hero = ({ className, ...props }: { className?: string }) => {
   const [displayRequestForm, setdisplayRequestForm] = useState(false)
 
   const handleRequestClick = () => {
     setdisplayRequestForm(true)
   }
   return (
-    <Container className='flex flex-col items-center text-center gap-2 justify-center shrink-0 grow'>
+    <Container
+      className={cn(
+        className,
+        "flex flex-col text-center gap-2 shrink-0 grow justify-center"
+      )}
+      {...props}
+    >
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 0.3,
+          duration: 0.2,
           type: "spring",
           stiffness: 100,
-          delay: 0.5,
         }}
       >
         <h1
@@ -34,7 +39,7 @@ const Hero = () => {
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.1, delay: 1 }}
+            transition={{ duration: 0.1, delay: 0.3 }}
             className={cn(
               reenie.className,
               "uppercase text-[61px] sm:text-[84px]"
@@ -43,20 +48,27 @@ const Hero = () => {
             sales!
           </motion.span>
         </h1>
-        <h2 className='leading-loose mb-6'>
+        <h2 className='leading-loose mb-6 text-xl sm:text-2xl'>
           AI-lead supply and behavioral targeting for B2B sales.
         </h2>
         {displayRequestForm ? (
-          <form className='flex gap-2 justify-center'>
+          <form
+            className='flex gap-2 justify-center'
+            name='waitinglist'
+            method='POST'
+            data-netlify='true'
+          >
             <input
               type='email'
+              name='email'
+              id='email'
               required
               placeholder='Enter your email...'
-              className='py-3 px-4 border-2 border-gray-300 rounded-md focus:outline-black'
+              className='py-2 px-3 border-2 border-gray-300 rounded-md focus:outline-gray-500'
             />
             <button
               type='submit'
-              className='py-3 px-8 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
+              className='py-2 px-6 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
             >
               Submit
             </button>
@@ -64,7 +76,7 @@ const Hero = () => {
         ) : (
           <button
             onClick={handleRequestClick}
-            className='py-3 px-8 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
+            className='py-2 px-6 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
           >
             Request Access
           </button>
@@ -75,24 +87,3 @@ const Hero = () => {
 }
 
 export default Hero
-
-// import { motion } from "framer-motion"
-
-// const variants = {
-//   open: { opacity: 1, x: 0 },
-//   closed: { opacity: 0, x: "-100%" },
-// }
-
-// export const MyComponent = () => {
-//   const [isOpen, setIsOpen] = useState(false)
-
-//   return (
-//     <motion.nav
-//       animate={isOpen ? "open" : "closed"}
-//       variants={variants}
-//     >
-//       <Toggle onClick={() => setIsOpen(isOpen => !isOpen)} />
-//       <Items />
-//     </motion.nav>
-//   )
-// }

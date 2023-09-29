@@ -20,7 +20,7 @@ export default function RootLayout({
       <body
         className={cn(
           hanken.className,
-          "text-xl md:text-2xl w-full h-full bg-background-grid bg-right-top bg-no-repeat	"
+          "md:text-lg w-full h-full bg-background-grid bg-right-top bg-no-repeat	"
         )}
       >
         <div className='min-h-full flex flex-col items-stretch'>
