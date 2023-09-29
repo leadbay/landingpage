@@ -36,14 +36,15 @@ const Navigation = () => {
         </ul>
       </nav>
       <nav className='flex flex-col sm:flex-row gap-10 items-center'>
-        <div className='gap-4 xl:gap-10 xl:flex hidden'>
+        {/* <div className='gap-4 xl:gap-10 xl:flex hidden'>
           <a
             href='https://leadbay.app/login'
             className='hover:text-gray-700 py-0.5 px-4 bg-white border-2 border-black hover:border-gray-700 rounded-md'
           >
             Login
           </a>
-        </div>
+        </div> */}
+        <div className='w-[240px] hidden sm:block' />
         <button className='z-20' onClick={handleMenuClick}>
           <BurgerIcon className='xl:hidden block' />
         </button>
@@ -69,14 +70,14 @@ const Navigation = () => {
                   </span>
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   className='hover:text-gray-700'
                   href='https://leadbay.app/login'
                 >
                   Login
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         ) : null}
