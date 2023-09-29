@@ -77,14 +77,6 @@ const Navigation = () => {
                   Login
                 </a>
               </li>
-              <li>
-                <a
-                  className='hover:text-gray-700'
-                  href='https://leadbay.app/register'
-                >
-                  Sign up
-                </a>
-              </li>
             </ul>
           </div>
         ) : null}
