@@ -14,7 +14,7 @@ const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2, delay: 0.6 }}
         >
-          <div className='flex items-center justify-between px-9 py-12'>
+          <div className='flex items-center justify-between px-9 py-6'>
             <Link href='/' className='xl:block hidden'>
               <Logo full className=' h-12' />
             </Link>
