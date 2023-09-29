@@ -76,7 +76,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         ) : (
           <button
             onClick={handleRequestClick}
-            className='py-2 px-6 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
+            className='py-2 px-6 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md hover:animate-wiggle'
           >
             Request Access
           </button>

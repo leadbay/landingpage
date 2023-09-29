@@ -14,6 +14,15 @@ const config: Config = {
       backgroundImage: {
         "background-grid": "url('/img/background-grid.svg')",
       },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-1deg)" },
+          "50%": { transform: "rotate(1deg)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 0.1s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
