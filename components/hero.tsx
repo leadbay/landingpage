@@ -14,34 +14,58 @@ const Hero = ({ className, ...props }: { className?: string }) => {
       )}
       {...props}
     >
+      <h1
+        className={cn(
+          basement.className,
+          "text-[35px] uppercase leading-tight sm:text-[56px]"
+        )}
+      >
+        <motion.div
+          initial={{ opacity: 0, y: -500 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.1, delay: 0.5 }}
+          className='inline-block'
+        >
+          Let&apos;s
+        </motion.div>{" "}
+        <motion.span
+          initial={{ opacity: 0, y: -500 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.1, delay: 1 }}
+          className='inline-block'
+        >
+          rock
+        </motion.span>{" "}
+        <motion.span
+          initial={{ opacity: 0, y: -500 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.1, delay: 1.5 }}
+          className='inline-block'
+        >
+          your
+        </motion.span>{" "}
+        <motion.span
+          initial={{ opacity: 0, y: -500 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.1, delay: 2 }}
+          className={cn(
+            reenie.className,
+            "text-[61px] uppercase sm:text-[84px] inline-block"
+          )}
+        >
+          sales!
+        </motion.span>
+      </h1>
       <motion.div
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{
-          duration: 0.2,
+          duration: 0.5,
+          delay: 2.7,
           type: "spring",
           stiffness: 100,
         }}
       >
-        <h1
-          className={cn(
-            basement.className,
-            "text-[35px] uppercase leading-tight sm:text-[56px]"
-          )}
-        >
-          Let&apos;s rock your{" "}
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.1, delay: 0.3 }}
-            className={cn(
-              reenie.className,
-              "text-[61px] uppercase sm:text-[84px]"
-            )}
-          >
-            sales!
-          </motion.span>
-        </h1>
         <h2 className='mb-6 text-xl leading-loose sm:text-2xl'>
           AI-lead supply and behavioral targeting for B2B sales.
         </h2>
