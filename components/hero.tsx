@@ -58,7 +58,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             method='POST'
             data-netlify='true'
           >
-            <input type='hidden' name='form-name' value='waitinglist' />
+            <input type='hidden' name='form-name' value='Waitinglist' />
             <input
               type='email'
               name='email-address'
