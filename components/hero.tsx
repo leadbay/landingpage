@@ -61,12 +61,11 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             <input
               type='email'
               name='email'
-              id='email'
               required
               placeholder='Enter your email...'
               className='py-2 px-3 border-2 border-gray-300 rounded-md focus:outline-gray-500'
             />
-            <input type='hidden' name='waitinglist' value='Email' />
+            <input type='hidden' name='form-name' value='email' />
             <button
               type='submit'
               className='py-2 px-6 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
