@@ -2,6 +2,23 @@
 
 import React, { useState } from "react"
 import { BurgerIcon } from "@/components"
+import { cn } from "@/lib/utils"
+
+const links = [
+  // {
+  //   label: "Research",
+  //   url: "/",
+  // },
+  {
+    label: "Community",
+    url: "https://ludogranger.substack.com/p/leadbay-manifesto",
+  },
+  {
+    label: "Career",
+    url: "https://changeable-tick-30e.notion.site/Leadbay-Career-0b3a4b7743cd4eeb9865f18ee16cddab?pvs=4",
+    badge: "3",
+  },
+]
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -13,37 +30,26 @@ const Navigation = () => {
     <>
       <nav className='flex flex-col xl:flex-row gap-10 items-center'>
         <ul className='gap-4 xl:gap-10 xl:flex hidden'>
-          {/* <li>Research</li> */}
-          <li>
-            <a
-              className='hover:text-gray-700'
-              href='https://ludogranger.substack.com/p/leadbay-manifesto'
-            >
-              Community
-            </a>
-          </li>
-          <li>
-            <a
-              className='group hover:text-gray-700 relative'
-              href='https://changeable-tick-30e.notion.site/Leadbay-Career-0b3a4b7743cd4eeb9865f18ee16cddab?pvs=4'
-            >
-              Career
-              <span className='absolute -top-1 -right-6 rounded-full bg-black h-5 w-5 p-0.5 text-center text-white text-xs group-hover:bg-gray-700'>
-                3
-              </span>
-            </a>
-          </li>
+          {links.map((link) => (
+            <li key={link.url}>
+              <a
+                className={cn("hover:text-gray-700", link.badge && "relative")}
+                href={link.url}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {link.label}
+                {link.badge ? (
+                  <span className='absolute -top-1 -right-6 rounded-full bg-black h-5 w-5 p-0.5 text-center text-white text-xs group-hover:bg-gray-700'>
+                    {link.badge}
+                  </span>
+                ) : null}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
       <nav className='flex flex-col sm:flex-row gap-10 items-center'>
-        {/* <div className='gap-4 xl:gap-10 xl:flex hidden'>
-          <a
-            href='https://leadbay.app/login'
-            className='hover:text-gray-700 py-0.5 px-4 bg-white border-2 border-black hover:border-gray-700 rounded-md'
-          >
-            Login
-          </a>
-        </div> */}
         <div className='w-[240px] hidden sm:block' />
         <button className='z-20' onClick={handleMenuClick}>
           <BurgerIcon className='xl:hidden block' />
@@ -51,33 +57,26 @@ const Navigation = () => {
         {menuOpen ? (
           <div className='z-10 bg-white w-screen h-screen absolute top-0 left-0'>
             <ul className='flex flex-col justify-center text-6xl h-full gap-8 p-12 max-w-sm m-auto'>
-              <li>
-                <a
-                  className='hover:text-gray-700'
-                  href='https://ludogranger.substack.com/p/leadbay-manifesto'
-                >
-                  Community
-                </a>
-              </li>
-              <li>
-                <a
-                  className='hover:text-gray-700 relative'
-                  href='https://changeable-tick-30e.notion.site/Leadbay-Career-0b3a4b7743cd4eeb9865f18ee16cddab?pvs=4'
-                >
-                  Career
-                  <span className='absolute top-2 -right-9 rounded-full bg-black h-8 w-8 p-1 text-center text-white text-base group-hover:bg-gray-700 font-bold'>
-                    3
-                  </span>
-                </a>
-              </li>
-              {/* <li>
-                <a
-                  className='hover:text-gray-700'
-                  href='https://leadbay.app/login'
-                >
-                  Login
-                </a>
-              </li> */}
+              {links.map((link) => (
+                <li key={link.url}>
+                  <a
+                    className={cn(
+                      "hover:text-gray-700",
+                      link.badge && "relative"
+                    )}
+                    href={link.url}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    {link.label}
+                    {link.badge ? (
+                      <span className='absolute top-2 -right-9 rounded-full bg-black h-8 w-8 p-1 text-center text-white text-base group-hover:bg-gray-700 font-bold'>
+                        {link.badge}
+                      </span>
+                    ) : null}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         ) : null}
