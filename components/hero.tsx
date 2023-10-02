@@ -4,8 +4,10 @@ import { basement, reenie } from "@/fonts"
 import { cn } from "@/lib/utils"
 import { Container } from "@/components"
 import { motion } from "framer-motion"
+import { useState } from "react"
 
 const Hero = ({ className, ...props }: { className?: string }) => {
+  const [displayInput, setDisplayInput] = useState(false)
   return (
     <Container
       className={cn(
@@ -52,20 +54,32 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           data-netlify='true'
         >
           <input type='hidden' name='form-name' value='waitinglist' />
-          <input
-            type='email'
-            name='email'
-            id='email'
-            required
-            placeholder='Enter your email...'
-            className='rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500'
-          />
-          <button
-            type='submit'
-            className='rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
-          >
-            Submit
-          </button>
+          {displayInput ? (
+            <>
+              <input
+                type='email'
+                name='email'
+                id='email'
+                required
+                placeholder='Enter your email...'
+                className='rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500'
+              />
+              <button
+                type='submit'
+                className='rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
+              >
+                Submit
+              </button>
+            </>
+          ) : (
+            <button
+              type='button'
+              onClick={() => setDisplayInput(true)}
+              className='rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
+            >
+              Request access
+            </button>
+          )}
         </form>
       </motion.div>
     </Container>
