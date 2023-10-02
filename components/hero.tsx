@@ -16,7 +16,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
     <Container
       className={cn(
         className,
-        "flex flex-col text-center gap-2 shrink-0 grow justify-center"
+        "flex shrink-0 grow flex-col justify-center gap-2 text-center"
       )}
       {...props}
     >
@@ -32,7 +32,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         <h1
           className={cn(
             basement.className,
-            "uppercase text-[35px] sm:text-[56px] leading-tight"
+            "text-[35px] uppercase leading-tight sm:text-[56px]"
           )}
         >
           Let&apos;s rock your{" "}
@@ -42,33 +42,35 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             transition={{ duration: 0.1, delay: 0.3 }}
             className={cn(
               reenie.className,
-              "uppercase text-[61px] sm:text-[84px]"
+              "text-[61px] uppercase sm:text-[84px]"
             )}
           >
             sales!
           </motion.span>
         </h1>
-        <h2 className='leading-loose mb-6 text-xl sm:text-2xl'>
+        <h2 className='mb-6 text-xl leading-loose sm:text-2xl'>
           AI-lead supply and behavioral targeting for B2B sales.
         </h2>
         {displayRequestForm ? (
           <form
-            className='flex gap-2 justify-center'
+            className='flex justify-center gap-2'
             name='waitinglist'
             method='POST'
             data-netlify='true'
           >
+            <input type='hidden' name='form-name' value='waitinglist' />
             <input
               type='email'
-              name='email'
+              name='email-address'
+              id='waitinglist-email-address'
+              autoComplete='email'
               required
               placeholder='Enter your email...'
-              className='py-2 px-3 border-2 border-gray-300 rounded-md focus:outline-gray-500'
+              className='rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500'
             />
-            <input type='hidden' name='form-name' value='waitinglist' />
             <button
               type='submit'
-              className='py-2 px-6 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md'
+              className='rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
             >
               Submit
             </button>
@@ -76,7 +78,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         ) : (
           <button
             onClick={handleRequestClick}
-            className='py-2 px-6 bg-black hover:bg-gray-700 text-white border-2 border-black hover:border-gray-700 rounded-md hover:animate-wiggle'
+            className='rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:animate-wiggle hover:border-gray-700 hover:bg-gray-700'
           >
             Request Access
           </button>
