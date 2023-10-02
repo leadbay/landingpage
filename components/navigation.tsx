@@ -25,7 +25,7 @@ const Navigation = () => {
           <li>
             <a
               className='group hover:text-gray-700 relative'
-              href='https://changeable-tick-30e.notion.site/Leadbay-Career-230e5838c5c54c329163b00156440707?pvs=4'
+              href='https://changeable-tick-30e.notion.site/Leadbay-Career-0b3a4b7743cd4eeb9865f18ee16cddab?pvs=4'
             >
               Career
               <span className='absolute -top-1 -right-6 rounded-full bg-black h-5 w-5 p-0.5 text-center text-white text-xs group-hover:bg-gray-700'>
@@ -62,7 +62,7 @@ const Navigation = () => {
               <li>
                 <a
                   className='hover:text-gray-700 relative'
-                  href='https://ludogranger.substack.com/p/leadbay-manifesto'
+                  href='https://changeable-tick-30e.notion.site/Leadbay-Career-0b3a4b7743cd4eeb9865f18ee16cddab?pvs=4'
                 >
                   Career
                   <span className='absolute top-2 -right-9 rounded-full bg-black h-8 w-8 p-1 text-center text-white text-base group-hover:bg-gray-700 font-bold'>
