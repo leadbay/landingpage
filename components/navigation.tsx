@@ -56,12 +56,12 @@ const Navigation = () => {
           <BurgerIcon className='xl:hidden block' />
         </button>
         {menuOpen ? (
-          <div className='z-10 bg-white w-screen h-screen absolute top-0 left-0'>
+          <div className='z-10 bg-black text-white w-screen h-screen absolute top-0 left-0'>
             <ul className='flex flex-col justify-center text-6xl h-full gap-8 p-12 max-w-sm m-auto'>
               {links.map((link) => (
                 <li key={link.url}>
                   <a
-                    className={"hover:text-gray-700"}
+                    className={"hover:text-gray-300 no-underline"}
                     href={link.url}
                     target='_blank'
                     rel='noopener noreferrer'

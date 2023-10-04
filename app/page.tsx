@@ -61,10 +61,10 @@ export default async function Home() {
               alt={record?.fields?.name}
               width={320}
               height={320}
-              className='object-cover aspect-square	'
+              className='object-cover aspect-square'
             />
             <div className='flex flex-col divide-y divide-gray-400 p-6'>
-              <div className='flex justify-between mb-2'>
+              <div className='flex justify-between mb-3'>
                 <div className='flex flex-col '>
                   <h1 className='font-bold'>{record?.fields?.name}</h1>
                   <p>{record?.fields?.title}</p>
@@ -76,10 +76,10 @@ export default async function Home() {
                   alt={record?.fields?.name}
                   width={48}
                   height={48}
-                  className='object-contain'
+                  className='object-contain h-8'
                 />
               </div>
-              <div className='flex flex-col pt-2 text-sm'>
+              <div className='flex flex-col pt-3 text-sm'>
                 <ReactMarkdown children={record?.fields?.description} />
               </div>
             </div>
