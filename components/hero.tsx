@@ -1,4 +1,6 @@
 "use client"
+import formData from "form-data"
+import Mailgun from "mailgun.js"
 
 import { basement, reenie } from "@/fonts"
 import { cn } from "@/lib/utils"
@@ -21,33 +23,32 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         )}
       >
         <motion.div
-          initial={{ opacity: 0, y: -500 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.1, delay: 0.1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           className='inline-block'
         >
           Let&apos;s
         </motion.div>{" "}
         <motion.span
-          initial={{ opacity: 0, y: -500 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.1, delay: 0.5 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.1 }}
           className='inline-block'
         >
           rock
         </motion.span>{" "}
         <motion.span
-          initial={{ opacity: 0, y: -500 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.1, delay: 0.6 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
           className='inline-block'
         >
           your
         </motion.span>{" "}
         <motion.span
-          initial={{ opacity: 0, y: -500 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.1, delay: 0.7 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
           className={cn(
             reenie.className,
             "text-[61px] uppercase sm:text-[84px] inline-block"
@@ -61,7 +62,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         animate={{ opacity: 1 }}
         transition={{
           duration: 0.5,
-          delay: 1,
+          delay: 0.7,
           type: "spring",
           stiffness: 100,
         }}
