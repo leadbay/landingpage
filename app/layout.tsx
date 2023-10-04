@@ -35,15 +35,11 @@ export default function RootLayout({
           sizes='16x16'
           href='/favicon-16x16.png'
         />
-        <link rel='manifest' href='/site.webmanifest' />
       </head>
       <body
-        className={cn(
-          hanken.className,
-          "md:text-lg w-full h-full bg-background-grid bg-right-top bg-no-repeat	"
-        )}
+        className={cn(hanken.className, "md:text-lg w-full h-full	bg-black")}
       >
-        <div className='min-h-full flex flex-col items-stretch'>
+        <div className='min-h-full flex flex-col items-stretch  bg-background-grid bg-right-top bg-no-repeat'>
           <Header />
           {children}
           {/* <Footer /> */}

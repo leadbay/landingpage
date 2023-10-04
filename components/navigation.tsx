@@ -5,18 +5,29 @@ import { BurgerIcon } from "@/components"
 import { cn } from "@/lib/utils"
 
 const links = [
-  // {
-  //   label: "Research",
-  //   url: "/",
-  // },
   {
-    label: "Community",
-    url: "https://ludogranger.substack.com/p/leadbay-manifesto",
+    label: "Manifesto",
+    url: "#",
   },
   {
-    label: "Career",
-    url: "https://changeable-tick-30e.notion.site/Leadbay-Career-0b3a4b7743cd4eeb9865f18ee16cddab?pvs=4",
-    badge: "3",
+    label: "Newsletter",
+    url: "#",
+  },
+  {
+    label: "Podcast",
+    url: "#",
+  },
+  {
+    label: "Playlist",
+    url: "#",
+  },
+]
+
+const cta = [
+  {
+    label: "Join the factory",
+    variant: "secondary",
+    url: "#",
   },
 ]
 
@@ -27,23 +38,13 @@ const Navigation = () => {
   }
 
   return (
-    <>
+    <div className='text-white'>
       <nav className='flex flex-col xl:flex-row gap-10 items-center'>
         <ul className='gap-4 xl:gap-10 xl:flex hidden'>
           {links.map((link) => (
             <li key={link.url}>
-              <a
-                className={cn("hover:text-gray-700", link.badge && "relative")}
-                href={link.url}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+              <a className={"hover:text-gray-700"} href={link.url}>
                 {link.label}
-                {link.badge ? (
-                  <span className='absolute -top-1 -right-6 rounded-full bg-black h-5 w-5 p-0.5 text-center text-white text-xs group-hover:bg-gray-700'>
-                    {link.badge}
-                  </span>
-                ) : null}
               </a>
             </li>
           ))}
@@ -60,20 +61,12 @@ const Navigation = () => {
               {links.map((link) => (
                 <li key={link.url}>
                   <a
-                    className={cn(
-                      "hover:text-gray-700",
-                      link.badge && "relative"
-                    )}
+                    className={"hover:text-gray-700"}
                     href={link.url}
                     target='_blank'
                     rel='noopener noreferrer'
                   >
                     {link.label}
-                    {link.badge ? (
-                      <span className='absolute top-2 -right-9 rounded-full bg-black h-8 w-8 p-1 text-center text-white text-base group-hover:bg-gray-700 font-bold'>
-                        {link.badge}
-                      </span>
-                    ) : null}
                   </a>
                 </li>
               ))}
@@ -81,7 +74,7 @@ const Navigation = () => {
           </div>
         ) : null}
       </nav>
-    </>
+    </div>
   )
 }
 

@@ -12,7 +12,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
     <Container
       className={cn(
         className,
-        "flex shrink-0 grow flex-col justify-center gap-2 text-center"
+        "flex shrink-0 grow flex-col justify-center gap-2 text-center text-white"
       )}
       {...props}
     >
@@ -22,41 +22,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           "text-[35px] uppercase leading-tight sm:text-[56px]"
         )}
       >
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.001 }}
-          className='inline-block'
-        >
-          Let&apos;s
-        </motion.div>{" "}
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.001, delay: 0.05 }}
-          className='inline-block'
-        >
-          rock
-        </motion.span>{" "}
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.001, delay: 0.1 }}
-          className='inline-block'
-        >
-          your
-        </motion.span>{" "}
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.001, delay: 0.15 }}
-          className={cn(
-            reenie.className,
-            "text-[61px] uppercase sm:text-[84px] inline-block"
-          )}
-        >
-          sales!
-        </motion.span>
+        The Sales Champions' Factory
       </h1>
       <motion.div
         initial={{ opacity: 0 }}
@@ -69,7 +35,8 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         }}
       >
         <h2 className='mb-6 text-xl leading-loose sm:text-2xl'>
-          AI-lead supply and behavioral targeting for B2B sales.
+          Become a EURO-US sales champion and empower the next generation of B2B
+          sales reps.
         </h2>
         <form
           className='flex justify-center gap-2'
@@ -84,13 +51,13 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             id='email'
             required
             placeholder='Enter your email...'
-            className='rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500'
+            className='rounded-md border-2 bg-black border-gray-300 px-3 py-2 focus:outline-gray-500'
           />
           <button
             type='submit'
-            className='rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
+            className='rounded-md border-2 border-white bg-white px-6 py-2 text-black hover:border-gray-700 hover:bg-gray-700'
           >
-            Request access
+            Join the factory
           </button>
         </form>
       </motion.div>
