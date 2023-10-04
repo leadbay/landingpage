@@ -25,6 +25,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          transition={{ duration: 0.001 }}
           className='inline-block'
         >
           Let&apos;s
@@ -32,7 +33,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.1 }}
+          transition={{ duration: 0.001, delay: 0.05 }}
           className='inline-block'
         >
           rock
@@ -40,7 +41,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
+          transition={{ duration: 0.001, delay: 0.1 }}
           className='inline-block'
         >
           your
@@ -48,7 +49,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
+          transition={{ duration: 0.001, delay: 0.15 }}
           className={cn(
             reenie.className,
             "text-[61px] uppercase sm:text-[84px] inline-block"
