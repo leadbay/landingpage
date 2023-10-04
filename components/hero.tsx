@@ -16,58 +16,23 @@ const Hero = ({ className, ...props }: { className?: string }) => {
       )}
       {...props}
     >
-      <h1
-        className={cn(
-          basement.className,
-          "text-[35px] uppercase leading-tight sm:text-[56px]"
-        )}
-      >
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.001 }}
-          className='inline-block'
-        >
-          Let&apos;s
-        </motion.div>{" "}
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.001, delay: 0.05 }}
-          className='inline-block'
-        >
-          rock
-        </motion.span>{" "}
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.001, delay: 0.1 }}
-          className='inline-block'
-        >
-          your
-        </motion.span>{" "}
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.001, delay: 0.15 }}
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <h1
           className={cn(
-            reenie.className,
-            "text-[61px] uppercase sm:text-[84px] inline-block"
+            basement.className,
+            "text-[35px] uppercase leading-tight sm:text-[56px]"
           )}
         >
-          sales!
-        </motion.span>
-      </h1>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          duration: 0.5,
-          delay: 0.7,
-          type: "spring",
-          stiffness: 100,
-        }}
-      >
+          Let&apos;s rock your
+          <span
+            className={cn(
+              reenie.className,
+              "text-[61px] uppercase sm:text-[84px] inline-block"
+            )}
+          >
+            sales!
+          </span>
+        </h1>
         <h2 className='mb-6 text-xl leading-loose sm:text-2xl'>
           AI-lead supply and behavioral targeting for B2B sales.
         </h2>
