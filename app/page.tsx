@@ -1,4 +1,5 @@
 import { Hero } from "@/components"
+import Image from "next/image"
 import ReactMarkdown from "react-markdown"
 
 interface RecordType {
@@ -49,16 +50,39 @@ export default async function Home() {
   return (
     <>
       <Hero />
-      <div className='flex w-full gap-2'>
+      <div className='flex gap-10 max-w-7xl mx-auto'>
         {champions?.records?.map((record: RecordType) => (
-          <div key={record.id} className='p-6 bg-white text-black'>
-            <h1>{record?.fields?.name}</h1>
-            <img src={record?.fields?.picture?.[0]?.url} />
-            <img
-              src={record?.fields?.company_logo?.[0]?.thumbnails?.small?.url}
+          <div
+            key={record.id}
+            className='bg-white text-black rounded-2xl max-w-[320px] overflow-hidden'
+          >
+            <Image
+              src={record?.fields?.picture?.[0]?.url}
+              alt={record?.fields?.name}
+              width={320}
+              height={320}
+              className='object-cover aspect-square	'
             />
-            <p>{record?.fields?.title}</p>
-            <ReactMarkdown children={record?.fields?.description} />
+            <div className='flex flex-col divide-y divide-gray-400 p-6'>
+              <div className='flex justify-between mb-2'>
+                <div className='flex flex-col '>
+                  <h1 className='font-bold'>{record?.fields?.name}</h1>
+                  <p>{record?.fields?.title}</p>
+                </div>
+                <Image
+                  src={
+                    record?.fields?.company_logo?.[0]?.thumbnails?.small?.url
+                  }
+                  alt={record?.fields?.name}
+                  width={48}
+                  height={48}
+                  className='object-contain'
+                />
+              </div>
+              <div className='flex flex-col pt-2 text-sm'>
+                <ReactMarkdown children={record?.fields?.description} />
+              </div>
+            </div>
           </div>
         ))}
       </div>
