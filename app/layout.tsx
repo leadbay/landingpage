@@ -37,9 +37,12 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={cn(hanken.className, "md:text-lg w-full h-full	bg-black")}
+        className={cn(
+          hanken.className,
+          "md:text-lg w-full h-full	bg-black text-white"
+        )}
       >
-        <div className='min-h-full flex flex-col items-stretch  bg-background-grid bg-right-top bg-no-repeat'>
+        <div className='flex flex-col bg-background-grid bg-right-top bg-no-repeat'>
           <Header />
           {children}
           {/* <Footer /> */}

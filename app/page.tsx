@@ -1,6 +1,8 @@
-import { Hero } from "@/components"
+import { cn } from "@/lib/utils"
 import Image from "next/image"
 import ReactMarkdown from "react-markdown"
+import { basement } from "@/fonts"
+import { Container } from "@/components"
 
 interface RecordType {
   id: string
@@ -48,9 +50,44 @@ export default async function Home() {
   const champions = await getChampions()
 
   return (
-    <>
-      <Hero />
-      <div className='flex gap-10 max-w-7xl mx-auto'>
+    <Container className='flex pt-[200px]'>
+      <div className='flex flex-col items-center justify-center w-1/2 bg-black'>
+        <h1
+          className={cn(
+            basement.className,
+            " text-[35px] uppercase leading-tight sm:text-[56px]"
+          )}
+        >
+          The Sales Champions' Factory
+        </h1>
+        <h2 className='mb-6 text-xl leading-loose sm:text-2xl'>
+          Become a EURO-US sales champion and empower the next generation of B2B
+          sales reps.
+        </h2>
+        <form
+          className='flex gap-2 w-full'
+          name='waitinglist'
+          method='POST'
+          data-netlify='true'
+        >
+          <input type='hidden' name='form-name' value='waitinglist' />
+          <input
+            type='email'
+            name='email'
+            id='email'
+            required
+            placeholder='Enter your email...'
+            className='rounded-md border-2 bg-black border-gray-300 px-3 py-2 focus:outline-gray-500'
+          />
+          <button
+            type='submit'
+            className='rounded-md border-2 border-white bg-white px-6 py-2 text-black hover:border-gray-700 hover:bg-gray-700'
+          >
+            Join the factory
+          </button>
+        </form>
+      </div>
+      <div className='flex gap-10 w-2/3'>
         {champions?.records?.map((record: RecordType) => (
           <div
             key={record.id}
@@ -86,6 +123,6 @@ export default async function Home() {
           </div>
         ))}
       </div>
-    </>
+    </Container>
   )
 }

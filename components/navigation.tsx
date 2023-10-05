@@ -39,11 +39,25 @@ const Navigation = () => {
 
   return (
     <div className='text-white'>
-      <nav className='flex flex-col xl:flex-row gap-10 items-center'>
+      <nav className='flex flex-col xl:flex-row justify-between'>
         <ul className='gap-4 xl:gap-10 xl:flex hidden'>
           {links.map((link) => (
             <li key={link.url}>
-              <a className={"hover:text-gray-700"} href={link.url}>
+              <a className={"hover:text-gray-700 no-underline"} href={link.url}>
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <ul>
+          {cta.map((link) => (
+            <li key={link.url}>
+              <a
+                className={
+                  "hover:text-gray-700 no-underline border border-white px-4 py-2 rounded-md"
+                }
+                href={link.url}
+              >
                 {link.label}
               </a>
             </li>
@@ -62,6 +76,20 @@ const Navigation = () => {
                 <li key={link.url}>
                   <a
                     className={"hover:text-gray-300 no-underline"}
+                    href={link.url}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+              {cta.map((link) => (
+                <li key={link.url}>
+                  <a
+                    className={
+                      "hover:text-gray-300 no-underline rounded-md whitespace-nowrap"
+                    }
                     href={link.url}
                     target='_blank'
                     rel='noopener noreferrer'

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Header = () => {
   return (
-    <div className='absolute w-screen'>
+    <>
       <NewsBanner />
       <Container>
         <div className='flex items-center justify-between px-9 py-6'>
@@ -13,7 +13,7 @@ const Header = () => {
           <Navigation />
         </div>
       </Container>
-    </div>
+    </>
   )
 }
 
