@@ -23,7 +23,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             "text-[35px] uppercase leading-tight sm:text-[56px]"
           )}
         >
-          Let&apos;s rock your
+          Let&apos;s rock your{" "}
           <span
             className={cn(
               reenie.className,
