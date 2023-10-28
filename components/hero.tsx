@@ -23,18 +23,18 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             "text-[35px] uppercase leading-tight sm:text-[56px]"
           )}
         >
-          Let&apos;s rock your{" "}
+          Your B2B leads today. Predictive, configurable, {" "}
           <span
             className={cn(
               reenie.className,
               "text-[61px] uppercase sm:text-[84px] inline-block"
             )}
           >
-            sales!
+            powerful.
           </span>
         </h1>
         <h2 className='mb-6 text-xl leading-loose sm:text-2xl'>
-          AI-lead supply and behavioral targeting for B2B sales.
+          Let's 🤘🏽 your sales with leadbay - the AI that supplies B2B sales reps targeting the mid-market with highly qualified leads.
         </h2>
         <form
           className='flex justify-center gap-2'
