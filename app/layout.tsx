@@ -1,9 +1,11 @@
-import "./globals.css"
 import type { Metadata } from "next"
+import "./globals.css"
 
+import { Header } from "@/components"
 import { hanken } from "@/fonts"
-import { Header, Footer } from "@/components"
 import { cn } from "@/lib/utils"
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 export const metadata: Metadata = {
   title: "Leadbay",
@@ -37,6 +39,7 @@ export default function RootLayout({
         />
         <link rel='manifest' href='/site.webmanifest' />
       </head>
+
       <body
         className={cn(
           hanken.className,
@@ -45,9 +48,12 @@ export default function RootLayout({
       >
         <div className='min-h-full flex flex-col items-stretch'>
           <Header />
+
           {children}
           {/* <Footer /> */}
         </div>
+
+        <ToastContainer />
       </body>
     </html>
   )
