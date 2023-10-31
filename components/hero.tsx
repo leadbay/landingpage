@@ -101,6 +101,9 @@ const Hero = ({ className, ...props }: { className?: string }) => {
         </motion.h2>
 
         <form
+          name='waitinglist'
+          method='POST'
+          data-netlify='true'
           onSubmit={handleSubmitForm}
           className='flex-col md:flex-row justify-center gap-2'
         >
