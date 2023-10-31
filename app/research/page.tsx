@@ -38,7 +38,7 @@ export default function Page() {
         </h3>
 
         <p>
-          In the current AI tide, inflating both expectations and fears, we take a clear position as techno-optimists (cf. <Link hreh="https://a16z.com/the-techno-optimist-manifesto/" target="_blank"> Marc Adreessen’s Techno-Optimist Manifesto</Link>).
+          In the current AI tide, inflating both expectations and fears, we take a clear position as techno-optimists (cf. <Link href="https://a16z.com/the-techno-optimist-manifesto/" target="_blank"> Marc Adreessen’s Techno-Optimist Manifesto</Link>).
         </p>
 
         <p>
@@ -92,7 +92,7 @@ export default function Page() {
         </p>
 
         <p>
-          Independently of the form of interaction being conversational or not, we can also expect much more from an AI system when it comes to supporting the human in tasks that require accurate and timely information. This is precisely what the context of professional interactions and sales is all about. This view is consistent with Yann Le Cun’s view : <Link href="https://twitter.com/ylecun/status/1625118108082995203" target="_blank">“There *will* be better systems that are factual, non toxic, and controllable. They just won't be auto-regressive LLMs.”</Link> 
+          Independently of the form of interaction being conversational or not, we can also expect much more from an AI system when it comes to supporting the human in tasks that require accurate and timely information. This is precisely what the context of professional interactions and sales is all about. This view is consistent with Yann Le Cun’s view : <Link href="https://twitter.com/ylecun/status/1625118108082995203" target="_blank">“There *will* be better systems that are factual, non toxic, and controllable. They just won't be auto-regressive LLMs.”</Link>
         </p>
 
         <p>
