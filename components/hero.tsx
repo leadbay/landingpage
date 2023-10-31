@@ -68,7 +68,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           animate={{ opacity: 1, transform: "translateY(0px)" }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           initial={{ opacity: 0, transform: "translateY(10px)" }}
-          className={cn("mb-6 leading-loose sm:text-2xl text-gray")}
+          className={cn("mb-6 leading-loose text-lg sm:text-2xl text-gray")}
         >
           Let's 🤘🏽 your{" "}
           <span
@@ -85,7 +85,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           initial={{ opacity: 0, transform: "translateY(10px)" }}
           className={cn(
             basement.className,
-            "text-[35px] leading-tight sm:text-[56px] my-6"
+            "text-[40px] leading-tight sm:text-[56px] my-6"
           )}
         >
           Your B2B leads today. Predictive, configurable, powerful.{" "}
@@ -105,12 +105,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           animate={{ opacity: 1, transform: "translateX(0px)" }}
           transition={{ duration: 0.5, delay: 0.7, ease: "easeInOut" }}
           initial={{ opacity: 0, transform: "translatex(10px)" }}
-          className='flex justify-center gap-2'
-          name='waitinglist'
-          method='post'
-          data-netlify-recaptcha='true'
-          data-netlify='true'
-          data-netlify-honeypot='bot-field'
+          className='flex-col md:flex-row justify-center gap-2'
         >
           <p className='hidden'>
             <label>
@@ -125,12 +120,12 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             id='email'
             required
             placeholder='Enter your email...'
-            className='rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500 min-w-[270px]'
+            className='rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500 min-w-[80%] md:min-w-[270px]'
           />
 
           <button
             type='submit'
-            className='rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
+            className='mt-3 md:mt-0 rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
           >
             Request access
           </button>
