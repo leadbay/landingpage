@@ -38,7 +38,7 @@ export default function Page() {
         </h3>
 
         <p>
-          In the current AI tide, inflating both expectations and fears, we take a clear position as techno-optimists (cf. <Link href="https://a16z.com/the-techno-optimist-manifesto/" target="_blank"> Marc Adreessen’s Techno-Optimist Manifesto</Link>).
+          In the current AI tide, inflating both expectations and fears, we take a clear position as techno-optimists (cf. <a href="https://a16z.com/the-techno-optimist-manifesto/" target="_blank"> Marc Adreessen’s Techno-Optimist Manifesto</a>).
         </p>
 
         <p>
@@ -46,7 +46,7 @@ export default function Page() {
         </p>
 
         <p>
-        This is especially important in the context of growing evidence that the average human IQ in developed countries might be seeing <Link href="https://en.wikipedia.org/wiki/Flynn_effect#Possible_end_of_progression" target="_blank">end of growth or even decline</Link>.
+        This is especially important in the context of growing evidence that the average human IQ in developed countries might be seeing <a href="https://en.wikipedia.org/wiki/Flynn_effect#Possible_end_of_progression" target="_blank">end of growth or even decline</a>.
         </p>
       </section>
 
@@ -56,11 +56,11 @@ export default function Page() {
         </h3>
 
         <p>
-          Our view on technology as an extension of the human intellect, is in the continuity of some of the fundamental positions in Computer Science that have shaped the modern, commercially available, information technologies. Firstly, we refer to the Memex – a concept proposed by Vannevar Bush in his article <Link href="https://en.wikipedia.org/wiki/As_We_May_Think" target="_blank">"As We May Think" (1945)</Link> that inspired personal computers, the Internet and the Web.
+          Our view on technology as an extension of the human intellect, is in the continuity of some of the fundamental positions in Computer Science that have shaped the modern, commercially available, information technologies. Firstly, we refer to the Memex – a concept proposed by Vannevar Bush in his article <a href="https://en.wikipedia.org/wiki/As_We_May_Think" target="_blank">"As We May Think" (1945)</a> that inspired personal computers, the Internet and the Web.
         </p>
 
         <p>
-          Secondly, we refer to Doug Engelbart work on augmenting human intellect – <Link href="https://www.youtube.com/watch?v=yJDv-zdhzMY" target="_blank">NLS Augment (1969)</Link> that set the ground for modern human-computer interfaces and collaborative software.
+          Secondly, we refer to Doug Engelbart work on augmenting human intellect – <a href="https://www.youtube.com/watch?v=yJDv-zdhzMY" target="_blank">NLS Augment (1969)</a> that set the ground for modern human-computer interfaces and collaborative software.
         </p>
 
         <p>
@@ -74,7 +74,7 @@ export default function Page() {
         </h3>
 
         <p>
-          The human is now almost inseparable from technology. The human brain, during its formative years, is heavily exposed to technology that is involved in many cognitive tasks. We are only beginning to understand the implications of this phenomenon, but the following is clear: the expectations from technology are changing, digital natives are a growing part of the population (and <Link href="https://www.cnbc.com/2019/03/05/how-millennials-and-gen-z-are-reshaping-the-future-of-the-workforce.html" target="_blank">already 38% of the workforce</Link>), and they have specific needs.
+          The human is now almost inseparable from technology. The human brain, during its formative years, is heavily exposed to technology that is involved in many cognitive tasks. We are only beginning to understand the implications of this phenomenon, but the following is clear: the expectations from technology are changing, digital natives are a growing part of the population (and <a href="https://www.cnbc.com/2019/03/05/how-millennials-and-gen-z-are-reshaping-the-future-of-the-workforce.html" target="_blank">already 38% of the workforce</a>), and they have specific needs.
         </p>
 
         <p>
@@ -92,7 +92,7 @@ export default function Page() {
         </p>
 
         <p>
-          Independently of the form of interaction being conversational or not, we can also expect much more from an AI system when it comes to supporting the human in tasks that require accurate and timely information. This is precisely what the context of professional interactions and sales is all about. This view is consistent with Yann Le Cun’s view : <Link href="https://twitter.com/ylecun/status/1625118108082995203" target="_blank">“There *will* be better systems that are factual, non toxic, and controllable. They just won't be auto-regressive LLMs.”</Link>
+          Independently of the form of interaction being conversational or not, we can also expect much more from an AI system when it comes to supporting the human in tasks that require accurate and timely information. This is precisely what the context of professional interactions and sales is all about. This view is consistent with Yann Le Cun’s view : <a href="https://twitter.com/ylecun/status/1625118108082995203" target="_blank">“There *will* be better systems that are factual, non toxic, and controllable. They just won't be auto-regressive LLMs.”</a>
         </p>
 
         <p>
