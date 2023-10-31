@@ -1,4 +1,4 @@
-import { Container, Logo, NewsBanner, Navigation } from "@/components"
+import { Container, Logo, Navigation, NewsBanner } from "@/components"
 import Link from "next/link"
 
 const Header = () => {
@@ -6,7 +6,7 @@ const Header = () => {
     <div className='absolute w-screen'>
       <NewsBanner />
       <Container>
-        <div className='flex items-center justify-between px-9 py-6'>
+        <div className='flex items-center justify-between px-2 md:px-9 py-6'>
           <Link href='/' className='xl:block hidden'>
             <Logo full className=' h-10' />
           </Link>
