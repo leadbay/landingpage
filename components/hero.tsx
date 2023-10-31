@@ -100,11 +100,8 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           The AI that supplies B2B sales reps with highly qualified leads
         </motion.h2>
 
-        <motion.form
+        <form
           onSubmit={handleSubmitForm}
-          animate={{ opacity: 1, transform: "translateX(0px)" }}
-          transition={{ duration: 0.5, delay: 0.7, ease: "easeInOut" }}
-          initial={{ opacity: 0, transform: "translatex(10px)" }}
           className='flex-col md:flex-row justify-center gap-2'
         >
           <p className='hidden'>
@@ -120,7 +117,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             id='email'
             required
             placeholder='Enter your email...'
-            className='rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500 min-w-[80%] md:min-w-[270px]'
+            className='rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500 min-w-[80%] md:min-w-[270px] mr-0 md:mr-2'
           />
 
           <button
@@ -129,7 +126,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           >
             Request access
           </button>
-        </motion.form>
+        </form>
       </header>
     </Container>
   )
