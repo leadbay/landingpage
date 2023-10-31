@@ -5,10 +5,10 @@ import { cn } from "@/lib/utils"
 import { useState } from "react"
 
 const links = [
-  // {
-  //   label: "Research",
-  //   url: "/",
-  // },
+   {
+     label: "Research",
+     url: "/research",
+   },
   {
     label: "Community",
     url: "https://ludogranger.substack.com/p/leadbay-manifesto",

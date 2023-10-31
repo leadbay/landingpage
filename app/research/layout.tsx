@@ -8,6 +8,6 @@ export default function Laout(props: LaoutProps) {
   const { children } = props
 
   return (
-    <article className='w-[600px] mt-[186px] mx-auto mb-10'>{children}</article>
+    <article className='w-[600px] mt-[186px] mx-auto mb-20'>{children}</article>
   )
 }
