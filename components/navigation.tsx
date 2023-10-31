@@ -7,7 +7,7 @@ import { useState } from "react"
 const links = [
    {
      label: "Research",
-     url: "/",
+     url: "/research",
    },
   {
     label: "Community",

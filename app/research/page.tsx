@@ -88,7 +88,7 @@ export default function Page() {
         </h3>
 
         <p>
-          The popularity of Chat GPT has established a strong, almost synonymous, association between AI and a conversational interface. Conversational interfaces have important limitations and are known to increase the users’ cognitive load more than classic graphic user interfaces. As other AI researchers (https://www.linkedin.com/posts/activity-7112049714035871744-uOzX?utm_source=share&utm_medium=member_desktop ), we are skeptical about their widespread use in the future. We are interested in going beyond.
+          The popularity of Chat GPT has established a strong, almost synonymous, association between AI and a conversational interface. Conversational interfaces have important limitations and are known to increase the users’ cognitive load more than classic graphic user interfaces. As <a href="https://www.linkedin.com/posts/activity-7112049714035871744-uOzX?utm_source=share&utm_medium=member_desktop" target="_blank">other AI researchers</a>, we are skeptical about their widespread use in the future. We are interested in going beyond.
         </p>
 
         <p>
