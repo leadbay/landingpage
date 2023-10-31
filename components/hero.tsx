@@ -107,12 +107,6 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           onSubmit={handleSubmitForm}
           className='flex-col md:flex-row justify-center gap-2'
         >
-          <p className='hidden'>
-            <label>
-              Don’t fill this out if you’re human: <input name='bot-field' />
-            </label>
-          </p>
-
           <input
             onChange={handleChange}
             type='email'
@@ -129,6 +123,12 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           >
             Request access
           </button>
+
+          <p className='hidden'>
+            <label>
+              Don’t fill this out if you’re human: <input name='bot-field' />
+            </label>
+          </p>
         </form>
       </header>
     </Container>
