@@ -49,15 +49,15 @@ export default function RootLayout({
       <body
         className={cn(
           hanken.className,
-          "md:text-lg w-full h-full bg-background-grid bg-right-top bg-no-repeat	"
+          "md:text-lg w-full h-screen bg-background-grid bg-right-top bg-no-repeat",
+          "flex flex-col justify-between min-h-screen"
         )}
       >
-        <div className='min-h-full flex flex-col items-stretch'>
-          <Header />
+        <Header />
 
-          {children}
-          {/* <Footer /> */}
-        </div>
+        <main className='flex-1 px-3 md:px-0'>{children}</main>
+
+        {/* <Footer /> */}
 
         <ToastContainer />
       </body>
