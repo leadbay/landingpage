@@ -98,7 +98,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           animate={{ opacity: 1, transform: "translateY(0px)" }}
           transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }}
           initial={{ opacity: 0, transform: "translateY(10px)" }}
-          className='mb-6 md:mb-12 text-xl leading-loose sm:text-2xl'
+          className='mb-6 md:mb-12 text-xl leading-loose sm:text-2xl text-gray-600'
         >
           The AI that supplies B2B sales reps with highly qualified leads
         </motion.h2>
