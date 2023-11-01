@@ -117,12 +117,12 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             id='email'
             required
             placeholder='Enter email to request access'
-            className='text-lg rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500 min-w-[300px] flex-auto md:flex-1 t mr-0 md:mr-2'
+            className='flex-1 text-lg rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500'
           />
 
           <button
             type='submit'
-            className='flex-1 md:flex-auto text-lg rounded-md border-2 border-black bg-black px-3 md:px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
+            className='text-lg rounded-md border-2 border-black bg-black px-3 md:px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
           >
             Start
           </button>
