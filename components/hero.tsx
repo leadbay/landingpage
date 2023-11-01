@@ -59,7 +59,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
       className={cn(
         className,
         "flex shrink-0 grow flex-col justify-center gap-2 text-center",
-        "h-[calc(100vh - 100px)] mt-[100px]"
+        "h-[calc(100dvh-36px)] mt-[36px]"
       )}
       {...props}
     >
