@@ -90,7 +90,7 @@ const Navigation = () => {
 
         {menuOpen ? (
           <motion.div
-            className='z-10 bg-white/70 w-screen h-[calc(100vh-48px)] mt-[48px] absolute inset-0 backdrop-blur-xl'
+            className='z-10 bg-white/70 w-screen h-[calc(100vh-48px)] mt-[36px] absolute inset-0 backdrop-blur-xl'
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
