@@ -1,42 +1,62 @@
 "use client"
 
-import { BurgerIcon } from "@/components"
+import { basement } from "@/fonts"
 import { cn } from "@/lib/utils"
-import { useState } from "react"
+import { motion } from "framer-motion"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { useEffect, useState } from "react"
+import { IoClose, IoMenu } from "react-icons/io5"
 
 const links = [
-   {
-     label: "Research",
-     url: "/research",
-   },
+  {
+    label: "Home",
+    url: "/",
+    external: false,
+  },
+  {
+    label: "Research",
+    url: "/research",
+    external: false,
+  },
   {
     label: "Community",
     url: "https://ludogranger.substack.com/p/leadbay-manifesto",
+    external: true,
   },
   {
     label: "Career",
     url: "https://changeable-tick-30e.notion.site/Leadbay-Career-0b3a4b7743cd4eeb9865f18ee16cddab?pvs=4",
     badge: "3",
+    external: true,
   },
 ]
 
 const Navigation = () => {
+  const pathname = usePathname()
+
   const [menuOpen, setMenuOpen] = useState(false)
+
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen)
   }
+
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [pathname])
 
   return (
     <>
       <nav className='flex flex-col xl:flex-row gap-10 items-center'>
         <ul className='gap-4 xl:gap-10 xl:flex hidden'>
-          {links.map((link) => (
+          {links.slice(1, 4).map((link) => (
             <li key={link.url}>
-              <a
+              <Link
+                onClick={handleMenuClick}
                 className={cn("hover:text-gray-700", link.badge && "relative")}
                 href={link.url}
-                target='_blank'
-                rel='noopener noreferrer'
+                target={link.external ? "_blank" : "_self"}
+                rel={link.external ? "noopener noreferrer" : ""}
               >
                 {link.label}
                 {link.badge ? (
@@ -44,7 +64,7 @@ const Navigation = () => {
                     {link.badge}
                   </span>
                 ) : null}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -54,22 +74,39 @@ const Navigation = () => {
         <div className='w-[240px] hidden sm:block' />
 
         <button className='z-20' onClick={handleMenuClick}>
-          <BurgerIcon className='xl:hidden block' />
+          <motion.div
+            key={JSON.stringify(menuOpen)}
+            animate={{ transform: "rotate(0)" }}
+            initial={{ transform: "rotate(-360deg)" }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            {menuOpen ? (
+              <IoClose className='xl:hidden block text-4xl' />
+            ) : (
+              <IoMenu className='xl:hidden block text-4xl' />
+            )}
+          </motion.div>
         </button>
 
         {menuOpen ? (
-          <div className='z-10 bg-white w-screen h-screen absolute top-0 left-0'>
-            <ul className='flex flex-col justify-center text-6xl h-full gap-8 p-12 max-w-sm m-auto'>
+          <motion.div
+            className='z-10 bg-white/70 w-screen h-[calc(100vh-48px)] mt-[48px] absolute inset-0 backdrop-blur-xl'
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            <ul className='flex text-center flex-col justify-center text-5xl h-full gap-16 p-12 max-w-sm m-auto'>
               {links.map((link) => (
                 <li key={link.url}>
-                  <a
+                  <Link
                     className={cn(
+                      basement.className,
                       "hover:text-gray-700",
                       link.badge && "relative"
                     )}
                     href={link.url}
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    target={link.external ? "_blank" : "_self"}
+                    rel={link.external ? "noopener noreferrer" : ""}
                   >
                     {link.label}
                     {link.badge ? (
@@ -77,11 +114,11 @@ const Navigation = () => {
                         {link.badge}
                       </span>
                     ) : null}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ) : null}
       </nav>
     </>

@@ -5,15 +5,15 @@ export default function Page() {
   return (
     <>
       <header>
-        <h1 className={cn(basement.className, "text-4xl")}>Research</h1>
+        <h1 className={cn(basement.className, "text-5xl")}>Research</h1>
 
-        <h2 className='mt-2 text-gray-500'>
+        <h2 className='text mt-3 text-2xl text-gray-500'>
           Taking a position with regards to rising AI tides.
         </h2>
       </header>
 
       <section className='my-16'>
-        <h3 className={cn(basement.className, "text-2xl mb-3")}>Mission</h3>
+        <h3 className={cn(basement.className, "text-3xl mb-5")}>Mission</h3>
 
         <p>
           At Leadbay we are on a mission to empower B2B sales with technology.
@@ -35,7 +35,7 @@ export default function Page() {
       </section>
 
       <section className='my-16'>
-        <h3 className={cn(basement.className, "text-2xl mb-3")}>
+        <h3 className={cn(basement.className, "text-3xl mb-5")}>
           Techno-optimists
         </h3>
 
@@ -77,7 +77,7 @@ export default function Page() {
       </section>
 
       <section className='my-16'>
-        <h3 className={cn(basement.className, "text-2xl mb-3")}>
+        <h3 className={cn(basement.className, "text-3xl mb-5")}>
           Augmenting (rather than replacing) the Human
         </h3>
 
@@ -124,7 +124,7 @@ export default function Page() {
       </section>
 
       <section className='my-16'>
-        <h3 className={cn(basement.className, "text-2xl mb-3")}>
+        <h3 className={cn(basement.className, "text-3xl mb-5")}>
           Building for Digital Natives
         </h3>
 
@@ -150,7 +150,7 @@ export default function Page() {
       </section>
 
       <section className='my-16'>
-        <h3 className={cn(basement.className, "text-2xl mb-3")}>
+        <h3 className={cn(basement.className, "text-3xl mb-5")}>
           There is more to AI than chatbots and current LLMs
         </h3>
 

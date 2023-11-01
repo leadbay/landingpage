@@ -68,11 +68,14 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           animate={{ opacity: 1, transform: "translateY(0px)" }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           initial={{ opacity: 0, transform: "translateY(10px)" }}
-          className={cn("mb-6 leading-loose text-lg sm:text-2xl text-gray")}
+          className={cn("leading-loose text-xl sm:text-2xl text-gray")}
         >
           Let's 🤘🏽 your{" "}
           <span
-            className={cn(reenie.className, "uppercase font-black text-6xl")}
+            className={cn(
+              reenie.className,
+              "uppercase font-black text-5xl md:text-6xl leading-none"
+            )}
           >
             sales
           </span>{" "}
@@ -85,17 +88,17 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           initial={{ opacity: 0, transform: "translateY(10px)" }}
           className={cn(
             basement.className,
-            "text-[40px] leading-tight sm:text-[56px] my-6"
+            "text-[2.4rem] leading-tight sm:text-[56px] my-6"
           )}
         >
-          Your B2B leads today. Predictive, configurable, powerful.{" "}
+          Your B2B leads today. Predictive, configurable, powerful.
         </motion.h1>
 
         <motion.h2
           animate={{ opacity: 1, transform: "translateY(0px)" }}
           transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }}
           initial={{ opacity: 0, transform: "translateY(10px)" }}
-          className='mb-12 text-xl leading-loose sm:text-2xl'
+          className='mb-6 md:mb-12 text-xl leading-loose sm:text-2xl'
         >
           The AI that supplies B2B sales reps with highly qualified leads
         </motion.h2>
@@ -114,12 +117,12 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             id='email'
             required
             placeholder='Enter your email...'
-            className='rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500 min-w-[80%] md:min-w-[270px] mr-0 md:mr-2'
+            className='text-lg rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500 min-w-[80%] md:min-w-[270px] mr-0 md:mr-2'
           />
 
           <button
             type='submit'
-            className='mt-3 md:mt-0 rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
+            className='text-lg mt-3 md:mt-0 rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
           >
             Request access
           </button>
