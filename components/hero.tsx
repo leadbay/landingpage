@@ -108,7 +108,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           method='POST'
           data-netlify='true'
           onSubmit={handleSubmitForm}
-          className='flex-col md:flex-row justify-center gap-2'
+          className='flex justify-center itms-center gap-2 max-w-[350px] m-auto'
         >
           <input
             onChange={handleChange}
@@ -116,15 +116,15 @@ const Hero = ({ className, ...props }: { className?: string }) => {
             name='email'
             id='email'
             required
-            placeholder='Enter your email...'
-            className='text-lg rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500 min-w-[80%] md:min-w-[270px] mr-0 md:mr-2'
+            placeholder='Enter email to request access'
+            className='text-lg rounded-md border-2 border-gray-300 px-3 py-2 focus:outline-gray-500 min-w-[300px] flex-auto md:flex-1 t mr-0 md:mr-2'
           />
 
           <button
             type='submit'
-            className='text-lg mt-3 md:mt-0 rounded-md border-2 border-black bg-black px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
+            className='flex-1 md:flex-auto text-lg rounded-md border-2 border-black bg-black px-3 md:px-6 py-2 text-white hover:border-gray-700 hover:bg-gray-700'
           >
-            Request access
+            Start
           </button>
 
           <p className='hidden'>
