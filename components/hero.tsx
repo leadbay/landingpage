@@ -100,7 +100,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           initial={{ opacity: 0, transform: "translateY(10px)" }}
           className='mb-6 md:mb-12 text-xl leading-loose sm:text-2xl text-gray-600'
         >
-          The AI that supplies B2B sales reps with highly qualified leads
+          The AI made for B2B sales lead generation
         </motion.h2>
 
         <form
