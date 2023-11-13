@@ -63,18 +63,18 @@ const Hero = ({ className, ...props }: { className?: string }) => {
       )}
       {...props}
     >
-      <header className="max-w-[900px] mx-auto">
+      <header className='max-w-[1000px] mx-auto'>
         <motion.h3
           animate={{ opacity: 1, transform: "translateY(0px)" }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           initial={{ opacity: 0, transform: "translateY(10px)" }}
-          className={cn("leading-loose text-xl sm:text-2xl text-gray")}
+          className={cn("leading-loose text-xl text-gray")}
         >
           Let's 🤘🏽 your{" "}
           <span
             className={cn(
               reenie.className,
-              "uppercase font-black text-5xl md:text-6xl leading-none"
+              "uppercase font-black text-5xl  leading-none"
             )}
           >
             sales
@@ -88,19 +88,22 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           initial={{ opacity: 0, transform: "translateY(10px)" }}
           className={cn(
             basement.className,
-            "text-[2.4rem] leading-tight sm:text-[56px] my-6"
+            "text-[2.4rem] leading-tight sm:text-[36px] my-8"
           )}
         >
-          Your B2B leads today. Predictive, configurable, powerful.
+          Your B2B leads today. Predictive,
+          <br /> configurable, powerful.
         </motion.h1>
 
         <motion.h2
           animate={{ opacity: 1, transform: "translateY(0px)" }}
           transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }}
           initial={{ opacity: 0, transform: "translateY(10px)" }}
-          className='mb-8 md:mb-12 text-xl md:leading-loose sm:text-2xl text-gray-600'
+          className='mb-8 md:mb-12 text-xl text-gray-600'
         >
-          The AI that supports B2B sales reps to set the ideal Customer Profile,<br className="hidden md:block" /> supply leads at the right time, and predict revenue growth.
+          The AI that supports B2B sales reps to set the ideal Customer Profile,
+          <br className='hidden md:block' /> supply leads at the right time, and
+          predict revenue growth.
         </motion.h2>
 
         <form
