@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css"
 
 export const metadata: Metadata = {
   title: "Leadbay",
-  description: "🤘 Let's rock your sales!",
+  description: "Leadbay empowers B2B sales reps with timely, contextual leads. Leadbay AI leverage internal and external datasets to support the the B2B sales reps to set their Ideal Customer Profile, supply their leads and predicct revenue growth.",
 }
 
 export const viewport = {

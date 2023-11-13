@@ -63,7 +63,7 @@ const Hero = ({ className, ...props }: { className?: string }) => {
       )}
       {...props}
     >
-      <header>
+      <header className="max-w-[900px] mx-auto">
         <motion.h3
           animate={{ opacity: 1, transform: "translateY(0px)" }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -98,9 +98,9 @@ const Hero = ({ className, ...props }: { className?: string }) => {
           animate={{ opacity: 1, transform: "translateY(0px)" }}
           transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }}
           initial={{ opacity: 0, transform: "translateY(10px)" }}
-          className='mb-6 md:mb-12 text-xl leading-loose sm:text-2xl text-gray-600'
+          className='mb-8 md:mb-12 text-xl md:leading-loose sm:text-2xl text-gray-600'
         >
-          The AI that supplies B2B sales reps with highly qualified leads
+          The AI that supports B2B sales reps to set the ideal Customer Profile,<br className="hidden md:block" /> supply leads at the right time, and predict revenue growth.
         </motion.h2>
 
         <form
